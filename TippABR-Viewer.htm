@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>»DarkNickli`s Tutorials«</title>
+<style type="text/css">
+        body {
+            font-family: "Lucida Sans",Verdana;
+            font-size: 14px;
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibCu-cb9WHNb1RvkgECHQ1XJZPy-HzWalYR9HNPC5KH73KFXJjfgarGtbBl2y8Qx33MhdYdvoD9CBphFbri30s1NG4pr59mNFnhdmKpasakJ_pv8UirnYAEj8zQY0_a4Qxld3X3uKYp0VyEh3fUYtt4TG8PxfBzww1RL380g0VqOKquM5GTrg7MKjWlt4/s1600/BG2.png');
+            background-color: #1a0c1a;color: #1a0c1a;
+            color: #7d6d7d;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .highlight {background-color:#D4AF37;}
+        
+        #container {
+           width: 1300px;
+           height: auto;
+           margin-bottom: 20px;
+           margin-left: auto;
+           margin-right: auto;
+           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibCu-cb9WHNb1RvkgECHQ1XJZPy-HzWalYR9HNPC5KH73KFXJjfgarGtbBl2y8Qx33MhdYdvoD9CBphFbri30s1NG4pr59mNFnhdmKpasakJ_pv8UirnYAEj8zQY0_a4Qxld3X3uKYp0VyEh3fUYtt4TG8PxfBzww1RL380g0VqOKquM5GTrg7MKjWlt4/s1600/BG2.png');
+           margin-top: 20px;
+           padding-bottom: 0px;
+}
+
+   
+       #banner {position: relative;
+            width: 1200px;
+            height: 400px;
+            background-size: cover;
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyFn3w-zfQB5Ocln4kYJdNHGtXWFKL17qlVQEmhVqFXH_egXfyEgZB9vNHoqIHTB9yUEWTgfOLdURBJfb5z6gmV8_wWT03tKUbRAXKfahXziMWuQUwX0cHqZHJ_JEVOZFZDtl0TqRmcf5A_G3IXygvgA7SFB-R67hzYl4tTS5ZjfJuWKipppxy0YTBFlg/s1600/BannerDN.jpg');
+            background-position: center;
+            text-align: center;
+            border: none;
+  
+            
+       }
+       
+
+
+/* Navigation Menu */
+        .submenu {font-family: Tahoma, Geneva, sans-serif;
+	        font-weight: bold;
+            text-transform: capitalize;
+	        letter-spacing: 1px;
+	        text-align: left; 
+            background-color: #b0acb0;
+            border: 1px solid #D4AF37;
+            padding: 10px;
+            text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+            color: #1a0c1a;
+            -webkit-border-radius: 4px 4px 4px 4px;
+            -moz-border-radius: 4px 4px 4px 4px;
+            border-radius: 4px 4px 4px 4px;        
+        }
+
+        .submenu a {
+            margin: 0 15px;
+            font-size: 1.2em;
+            color: #1a0c1a;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .submenu a:hover {
+            color: #7d6d7d;         
+        }
+
+#dropdown2 {background-color: #b0acb0;
+
+  position: relative;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 6px;
+  margin-left: -17px; 
+  margin-right: -20px; 
+  width: calc(100% + 38px); 
+  margin-bottom: -10px;
+  -webkit-box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+  -moz-box-shadow: 0px 0px 0px 3px rgba(26,12,26,1);
+  box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+    }
+  
+
+        #inhalt {
+            background-size: cover;
+            background-position: center;
+            color: #f9f8f9;
+            text-align: center;
+            padding-top: 8px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            border: 1px solid #D4AF37;
+            background-color: #7d6d7d;
+            -webkit-border-radius: 8px 8px 8px 8px;
+            -moz-border-radius: 8px 8px 8px 8px;
+            border-radius: 8px 8px 8px 8px;
+        }
+        #inhalt-inner {
+            background-size: cover;
+            background-position: center;
+            color: #f9f8f9;
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        h1 {
+           font-size: 35px;
+           font-weight: bold;
+           letter-spacing: 4px; 
+           height: 18px;
+           color: #ededed; 
+           text-transform:uppercase;
+           text-shadow: 5px 5px 5px #292727;
+        }
+        
+        
+        h2, h3, h4 {font-family: Tahoma, Geneva, sans-serif;
+           font-size: 20px;
+           font-style: normal;
+           font-variant: small-caps;
+           text-transform: capitalize;
+           letter-spacing: 4px;
+           height: 18px;
+           color: #1a0c1a; 
+           text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;   
+        }
+        
+        h3 {margin: -5px 0 15px;
+        }
+        
+        h4 {margin: 0px 0 15px;
+        }
+        
+        h5 {font-family: "Lucida Sans",Verdana; 
+        margin: 0px 0 15px;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+        color: #1a0c1a;
+        }
+
+
+        h5 a {
+            color: #1a0c1a;
+            text-decoration: none;
+        }
+
+        h5 a:hover {
+            color: #7d6d7d;
+        }
+
+.preview {
+           box-shadow: #292727 0px 0.0625em 0.0625em, #292727 0px 0.125em 0.5em, #292727 0px 0px 0px 1px inset;
+        }
+        
+         #protab {margin-left: auto;
+           margin-right: auto;
+        }
+        
+         #program{text-transform:uppercase;
+           font-family:Verdana,Verdana;
+           letter-spacing: 1px; 
+           font-size: 13px;
+           text-shadow: 0px 0px 3px #fff, 1px 1px 0px #fff;
+           width: auto;
+           height: 20px;
+           background-color: #b0acb0;
+           border: 1px solid #D4AF37;
+           color: #1a0c1a;
+           text-align: center;
+           line-height: 20px;
+           padding: 5px 20px;
+           webkit-border-radius: 5px 5px 5px 5px;
+           -moz-border-radius: 5px 5px 5px 5px;
+           border-radius: 5px 5px 5px 5px;
+           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+
+         }
+         
+         hr {
+           width: 25%;            
+           border: 0;             
+           border-top: 1px solid #1a0c1a;
+           margin-top: 2px;
+           margin-bottom:5px;
+           } 
+         
+         
+         #info1 { 
+           position: relative;
+           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
+           padding: 20px 20px 20px;
+           background-color: #f0f0f0;
+           text-align: center;
+           vertical-align: middle;
+           border-left: 1px solid #D4AF37;
+           border-bottom: 5px solid #1a0c1a;
+           border-right: 1px solid #D4AF37;
+           border-top: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -webkit-border-radius: 8px 8px 8px 8px;
+           -moz-border-radius: 8px 8px 8px 8px;
+           border-radius: 8px 8px 8px 8px;
+        }
+        
+
+        #info1::before {
+           content: 'Information';
+           font-size: 15px;
+           font-weight: bold;
+           position: absolute;
+           top: -10px;
+           left: -25px;
+           width: auto;
+           height: 20px;
+           background-color: #1a0c1a;
+           border: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           color: #f0f0f0;
+           text-align: center;
+           line-height: 20px;
+           padding: 5px 20px;
+           -webkit-border-radius: 5px 5px 5px 5px;
+           -moz-border-radius: 5px 5px 5px 5px;
+           border-radius: 5px 5px 5px 5px;
+
+        }
+
+        #info2 {  
+           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
+           position: relative;
+           padding: 55px 20px 20px;
+           min-padding: 55px 20px 20px;
+           background-color: #f0f0f0;
+           text-align: center;
+           vertical-align: middle;
+           border-left: 1px solid #D4AF37;
+           border-bottom: 5px solid #1a0c1a;
+           border-right: 1px solid #D4AF37;
+           border-top: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -webkit-border-radius: 8px 8px 8px 8px;
+           -moz-border-radius: 8px 8px 8px 8px;
+           border-radius: 8px 8px 8px 8px;
+           counter-increment: step; 
+        }
+
+
+/* Dekorationselement in der Zelle */
+        #info2::before {
+           content: 'Schritt ' counter(step); 
+           font-size: 15px;
+           font-weight: bold;
+           position: absolute;
+           top: 15px;
+           left: -5px;
+           width: 739px;
+           padding: 5px 20px;
+           background-color: #1a0c1a;
+           border: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           color: #f0f0f0;
+           -webkit-border-radius: 5px 5px 5px 5px;
+           -moz-border-radius: 5px 5px 5px 5px;
+           border-radius: 5px 5px 5px 5px;
+        }
+
+
+        #info3 {
+           position: relative;
+           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
+           padding: 20px;
+           background-color: #f0f0f0;
+           text-align: center;
+           vertical-align: middle;
+           border-left: 1px solid #D4AF37;
+           border-bottom: 5px solid #1a0c1a;
+           border-right: 1px solid #D4AF37;
+           border-top: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -webkit-border-radius: 8px 8px 8px 8px;
+           -moz-border-radius: 8px 8px 8px 8px;
+           border-radius: 8px 8px 8px 8px;
+        }
+
+
+        #info3::before {
+           content: 'Zubehör und Material';
+           font-size: 15px;
+           font-weight: bold;
+           position: absolute;
+           top: -10px;
+           left: -25px;
+           width: auto;
+           height: 20px;
+           background-color: #1a0c1a;
+           border: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           color: #f0f0f0;
+           text-align: center;
+           line-height: 20px;
+           padding: 5px 20px;
+           -webkit-border-radius: 5px 5px 5px 5px;
+           -moz-border-radius: 5px 5px 5px 5px;
+           border-radius: 5px 5px 5px 5px;
+        }
+
+        #info4 {
+           position: relative;
+           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
+           padding: 20px;
+           background-color: #f0f0f0;
+           text-align: center;
+           vertical-align: middle;
+           border-left: 1px solid #D4AF37;
+           border-bottom: 5px solid #1a0c1a;
+           border-right: 1px solid #D4AF37;
+           border-top: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+           -webkit-border-radius: 8px 8px 8px 8px;
+           -moz-border-radius: 8px 8px 8px 8px;
+           border-radius: 8px 8px 8px 8px;
+        }
+
+
+        #info4::before {
+           content: 'Info und Instruktionen';
+           font-size: 15px;
+           font-weight: bold;
+           position: absolute;
+           top: -10px;
+           left: -25px;
+           width: auto;
+           height: 20px;
+           background-color: #1a0c1a;
+           border: 1px solid #D4AF37;
+           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+           color: #f0f0f0;
+           text-align: center;
+           line-height: 20px;
+           padding: 5px 20px;
+           -webkit-border-radius: 5px 5px 5px 5px;
+           -moz-border-radius: 5px 5px 5px 5px;
+           border-radius: 5px 5px 5px 5px;
+        }
+
+.content1, .content2  {color: #1a0c1a;
+           font-family:Verdana,Verdana, Verdana;
+           letter-spacing: 0px;
+           font-size: 14px;
+           font-weight: bold;
+           line-height: 21px;
+           text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+           line-height: 20px;
+           text-align: center;
+           padding-top: 0px;
+           padding-bottom: 0px;
+           padding-right: 0px;
+           padding-left: 0px;
+           
+        }
+        
+ /* Vorwort */    
+        
+.content2  {padding-top: 5px;
+           padding-bottom: 0px;
+           padding-right: 0px;
+           padding-left: 0px;
+           letter-spacing: 0px;
+        }
+.note    {text-decoration: none;
+           letter-spacing: 0px;
+           text-transform: capitalize;
+           font-variant: small-caps;
+        }
+
+.mat{font-family: "Lucida Sans",Verdana;   font-size: 18px; ;
+        }
+
+</style>
+
+
+</head>
+
+<body>
+<div id="container">
+<table  align="center" id="inhalt">
+	<tr>
+		<td id="banner">
+		</td>
+	</tr>
+	<tr>
+            <td>
+<div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/tipps.html" target="_blank;"><strong>Tipps Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+            </td>
+		        </tr>
+		        <tr>
+		        <td id="inhalt-inner" cellspacing="0" cellpadding="2" ><h1>Anleitung für abrViewer.NET</h1>
+				<br />
+				<br />
+   				&nbsp;<br />
+				<br />
+				<br />
+			    <br />
+				<br />
+<!-- Info -->
+				<br />
+				<br />
+				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info3" align="center" valign="top">
+				<tr>
+				<td class="content2"><h3>-Benötigt-</h3>
+				<br />
+				<sub class="mat">abrViewer.NET</sub><hr />
+	            <h5><a href="https://sourceforge.net/projects/abrviewer/files/" target="_blank" ><strong>&gt;Download&lt;</strong></a></h5>
+	            <br />
+	             Keine Installation – einfach abrViewer.NET.exe ausführen.<br /><br />
+                </td>
+				</tr>
+				</table>
+				<br />
+				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info4" align="center" valign="top">
+				<tr>
+				<td class="content2"><h3>-Info-</h3>
+				<p style="text-align: left;width: 628px;padding-left: 50px;">
+				<u>Was ist abrViewer?</u><br /> 
+				Mit dem kostenlosen Tool abrViewer kannst Du Photoshop-Pinsel<br />
+				(.abr-Dateien) ganz einfach in PNG-Bilder umwandeln,<br />
+				falls Dein Grafikprogramm das .abr-Format nicht unterstützt.<br />
+				So kannst Du auch als Nicht-Photoshop-Nutzer vielerlei Brushes aus dem Netz nutzen.<br /><br />
+				<u>.NET Framework 4.8 installieren <mark class="highlight">(nur falls nötig)</mark></u><br />
+				 Wenn abrViewer.NET bei Dir nicht startet, fehlt wahrscheinlich<br />
+				 das .NET Framework 4.8.<br />
+				 Offizieller Microsoft-Link:▶<a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48" target="_blank" >.NET Framework 4.8 herunterladen</a><br /><br />
+				</p>
+				<h3>-Instruktionen-</h3>
+				<p style="text-align: left;width: 628px;padding-left: 50px;">
+				1. Klicke auf den Download-Link oben.<br />
+				2. Speichere die Datei <mark class="highlight">abrViewer.NET 3.0.zip</mark> auf Deinem PC.<br />
+				3. Mache einen Rechtsklick auf die ZIP-Datei → wähle 
+				"Alle extrahieren…" <br />
+				&nbsp;&nbsp;&nbsp;(z. B. auf den Desktop).<br />
+				4. Öffne den entpackten Ordner.<br />
+				5. Doppelklicke auf <mark class="highlight">abrViewer.NET.exe</mark>, um das Programm zu starten.<br />
+				&nbsp;&nbsp;&nbsp;(<u>Hinweis:</u> Falls eine Sicherheitsmeldung erscheint, klicke auf<br /> &nbsp; 
+				"Trotzdem ausführen".)<br /></p>
+				</td>
+				</tr>
+				</table>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+<!-- Sep by Sep -->
+	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
+	<tr>
+	<td class="content1"><h4>-Thumbnails einstellen-</h4>
+	Thumbnail sitz:<br />
+	→ Gib die gewünschte Größe für die Vorschaubilder ein.<br />
+	<img alt="" height="169" src="https://i.postimg.cc/L4J2WKgK/DN-ABRViewer-02.jpg" width="224"><p style="text-align: left;width: 628px;padding-left: 50px;"><br />
+	<u>Tipp:</u><br /> Wenn Du abrViewer.NET zusammen mit PaintShop Pro verwendest,<br />
+	empfiehlt sich eine Thumbnail-Größe von maximal 500 px, <br />besonders bei älteren Versionen.<br />
+	In neueren Versionen kannst Du die Anzeigegröße über die Einstellungen anpassen.</p>
+	</td>
+	</tr>
+	</table>
+	<br />
+	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
+	<tr>
+	<td class="content1"><h4>-Pinsel laden und steichern-</h4>
+	File - Open brush sets<br />
+	<img alt="" height="168" src="https://i.postimg.cc/8c2yKrJ5/DN-ABRViewer-01.jpg" width="205"><br />
+	Wähle den Ordner aus, in dem Du deine <mark class="highlight">.abr</mark>-Datei gespeichert hast.<br />
+	Klicke anschließend auf <em class="note">„Öffnen“</em>.<br />
+	<em class="note">Die geladenen Pinsel erscheinen direkt im Hauptfenster als Vorschau in Miniaturansicht.<br /><br /></em>
+	Export - Thumbnails<br />
+	<img alt="" src="https://i.postimg.cc/qqhbxG7S/DN-ABRViewer-03.jpg"><br />
+	Wähle einen Ordner, in dem die Vorschaubilder gespeichert werden sollen.<br />
+	<em class="note">Die Thumbnails werden automatisch im PNG-Format exportiert.<br /></em>
+	</td>
+	</tr>
+	</table>
+	<br /><p style="color: #1a0c1a; text-shadow: 1px 1px 0 #f0f0f0, 1px -1px 0 #f0f0f0, -1px 1px 0 #f0f0f0, -1px -1px 0 #f0f0f0, 1px 0px 0 #f0f0f0, 0px 1px 0 #f0f0f0, -1px 0px 0 #f0f0f0, 0px -1px 0 #f0f0f0;">
+                Das war's auch schon von mir. &#128522;<br/>
+    			Verfasst am 28.August 2007 , aktualisiert am 22.Juli 2025</p> 
+<!-- Sep End -->													
+</td>	<tr>
+		<td>               <div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/tipps.html" target="_blank;"><strong>Tipps Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+</td>
+	</tr>
+		<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>
