@@ -1,0 +1,863 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>»DarkNickli`s Tutorials«</title>
+<style>
+body {
+  font-family: "Lucida Sans",Verdana;
+  font-size: 14px;
+  background-image: url('file:///C:/Users/black/Desktop/BG2.png');
+  background-color: #1a0c1a;
+  color: #1a0c1a;
+  margin: 0;
+  padding: 0;
+}
+        
+.highlight {background-color:#D4AF37;}
+        
+#container {
+  margin: 20px auto;
+  width: 1300px;
+  height: auto;
+  background-image: url('file:///C:/Users/black/Desktop/BG2.png');
+  padding-bottom: 0px;
+}
+
+#banner {
+  border-style: none;
+  border-color: inherit;
+  border-width: medium;
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  background-size: cover;
+  background-image: url('file:///C:/Users/black/Desktop/BannerDN.jpg');
+  background-position: center;
+  text-align: center;
+}
+       
+/* Navigation Menu */
+.submenu {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: left; 
+  background-color: #b0acb0;
+  border: 1px solid #D4AF37;
+  padding: 10px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  color: #1a0c1a;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;        
+}
+
+.submenu a {
+  margin: 0 15px;
+  font-size: 1.2em;
+  color: #1a0c1a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #7d6d7d;         
+}
+
+#dropdown2 {background-color: #b0acb0;
+
+  position: relative;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 6px;
+  margin-left: -17px; 
+  margin-right: -20px; 
+  width: calc(100% + 38px); 
+  margin-bottom: -10px;
+  -webkit-box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+  -moz-box-shadow: 0px 0px 0px 3px rgba(26,12,26,1);
+  box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+    }
+
+#inhalt {
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  text-align: center;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  border: 1px solid #D4AF37;
+  background-color: #7d6d7d;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+        
+#inhalt-inner {
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 4px; 
+  height: 18px;
+  color: #ededed; 
+  text-transform:uppercase;
+  text-shadow: 5px 5px 5px #292727;
+}
+        
+h2, h3, h4{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  height: 18px;
+  color: #1a0c1a; 
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;   
+}
+        
+h3{
+  margin: -5px 0 15px;
+}
+        
+h4 {
+  margin: 0px 0 15px;
+}
+        
+h5 {
+  font-family: "Lucida Sans",Verdana; 
+  margin: 0px 0 15px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  color: #1a0c1a;
+}
+
+h5 a{
+  color: #1a0c1a;
+  text-decoration: none;
+}
+
+h5 a:hover{
+  color: #7d6d7d;
+}
+
+.preview{
+  box-shadow: #292727 0px 0.0625em 0.0625em, #292727 0px 0.125em 0.5em, #292727 0px 0px 0px 1px inset;
+}
+        
+ #protab {
+  margin-left: auto;
+  margin-right: auto;
+}
+        
+#program{
+  text-transform:uppercase;
+  font-family:Verdana,Verdana;
+  letter-spacing: 1px; 
+  font-size: 13px;
+  text-shadow: 0px 0px 3px #fff, 1px 1px 0px #fff;
+  width: auto;
+  height: 20px;
+  background-color: #b0acb0;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+
+}
+         
+  hr {
+  width: 25%;            
+  border: 0;             
+  border-top: 1px solid #1a0c1a;
+  margin-top: 2px;
+  margin-bottom:5px;
+} 
+         
+#info1{ 
+  position: relative;
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  padding: 20px 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+#info1::before {
+  content: 'Information';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: auto;
+  height: 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#info2 {  
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  position: relative;
+  padding: 55px 20px 20px;
+  min-padding: 55px 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  counter-increment: step; 
+}
+
+/* Dekorationselement in der Zelle */
+#info2::before {
+  content: 'Erklärungen: '; 
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  width: 739px;
+  padding: 5px 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#info3 {
+  position: relative;
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+#info3::before {
+  content: 'Web-Programmierung';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: auto;
+  height: 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+.content1, .content2{
+  color: #1a0c1a;
+  font-family:Verdana,Verdana, Verdana;
+  letter-spacing: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+        
+ /* Vorwort */    
+.content2{
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  letter-spacing: 0px;
+}
+
+.note{
+  text-decoration: none;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+.mat{font-family: "Lucida Sans",Verdana;   font-size: 18px; ;
+}
+
+/* Codebox */ 
+.code-block {text-align: left;
+  position: relative;
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 25px;
+  border-radius: 6px;
+  font-family: monospace;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background-color: #ededed;
+  color: black;
+}
+
+.copy-btn svg {
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.copy-btn::after {
+  content: "In die Zwischenablage";
+  position: absolute;
+  top: -28px;
+  right: 0;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.7em;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-btn:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.code-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 8px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  font-family: sans-serif;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.9;
+  z-index: 5;
+  text-shadow: none;
+}
+
+.code {   text-shadow: none; 
+  max-width: 678px;             
+  overflow-x: auto;             
+  white-space: pre;   
+}
+
+.code-con { 
+  border-radius: 3px; 
+  background-color:#b1b1b1; 
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* ueberschrift1+2 */
+.ueberschrift-1 {
+text-align: left;
+text-decoration: underline; 
+font-family: Tahoma, Geneva, sans-serif;
+margin-bottom: 4px; 
+margin-top: 5px; 
+font-size:18px; 
+font-style: normal;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+.ueberschrift-2 {
+text-align: left;
+margin-left: 10px;
+margin-bottom: 0px; 
+margin-top: 0px; 
+margin-right: 0px;
+}
+/* Toggle-Menue */
+#text1 {
+display: none;
+margin-top: 10px;
+}
+.toggle-link {
+cursor: pointer;
+color: #1a0c1a;
+text-decoration: none;
+}
+.toggle-link:hover {
+color: #eff0ef; 
+text-decoration: none;
+}
+
+</style>
+<!-- SCRIPT: Toggle-Menue  -->
+<script>
+function toggle(controlId) {
+var elem = document.getElementById(controlId);
+
+if (elem.style.display === "none" || elem.style.display === "") {
+elem.style.display = "block"; // Zeige das Element
+} else {
+elem.style.display = "none"; // Verstecke das Element
+}
+}
+</script>
+
+
+
+
+
+<!-- SCRIPT: Kopier den Bereich -->
+<script>
+function copyBereich(button) {
+  const codeBlock = button.closest(".code-block").querySelector(".code");
+  const text = codeBlock.innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+    const original = button.innerHTML;
+    button.innerHTML = "✓️ Kopiert!";
+    button.disabled = true;
+
+    setTimeout(() => {
+      button.innerHTML = original;
+      button.disabled = false;
+    }, 1500);
+  });
+}
+</script>
+
+
+
+</head><body>
+<div id="container">
+<table  align="center" id="inhalt">
+	<tr>
+		<td id="banner">
+		</td>
+	</tr>
+	<tr>
+            <td>
+<div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding02.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+            </td>
+		        </tr>
+		        <tr>
+		        <td id="inhalt-inner" cellspacing="0" cellpadding="2" ><h1>Toggle-Menü</h1>
+		        <h1 style="font-size: 15px; line-height: 20px; letter-spacing: 1px; margin-top:7px;">HTML</h1>
+				<br />
+				<br /> 
+				<br /><em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration:  none;">&#9830;Beispiel:</em>&#9656; 
+<!-- HIER wird der Ein-/Ausklapp-Text eingefügt -->
+<span class="toggle-link" onclick="toggle('text1')">-Klick mich-</span>
+<div id="text1" style="display: none;">Das ist ein Auf/Zu klappen Menü  &#x1f609;</div>
+<!-- Restlicher Inhalt deiner Seite -->
+				<br />
+				<br />
+				<br />
+<!-- Web-Cod -->
+				<br />
+				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info3" align="center" valign="top">
+				<tr>
+				<td class="content2">
+Kopiere den folgenden Code und setze ihn in den <code class="code-con">&lt;body&gt;</code>-Bereich Deiner Webseite.
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+ &lt;!-- HIER wird der Ein-/Ausklapp-Text eingefügt --&gt;
+&lt;span class="toggle-link" onclick="toggle('text1')"&gt;ANZEIGETEXT&lt;/span&gt;
+&lt;div id="text1" style="display: none;"&gt;DER TEXT ERSCHEINT BEIM ANKLICKEN&lt;/div&gt;
+
+&lt;!-- Restlicher Inhalt deiner Seite --&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+             Kopiere den Stil-Code in Deine <code class="code-con">CSS-Datei</code>.<br/>
+             Du kannst die Farben anschließend an Dein Design anpassen.
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+ #text1 {
+display: none;
+margin-top: 10px;
+}
+.toggle-link {
+cursor: pointer;
+color: blue;
+text-decoration: underline;
+}
+</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+Kopiere einfach das folgende Skript und füge es in den <code class="code-con">&lt;head&gt;</code> -Bereich Diner Webseite ein.
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">js</div>
+  <pre class="code">
+ &lt;script&gt;
+function toggle(controlId) {
+var elem = document.getElementById(controlId);
+
+if (elem.style.display === "none" || elem.style.display === "") {
+elem.style.display = "block"; // Zeige das Element
+} else {
+elem.style.display = "none"; // Verstecke das Element
+}
+}
+&lt;/script&gt;
+</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+
+
+
+                </td>
+				</tr>
+				</table>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+<!-- Web-Cod -->
+	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
+	<tr>
+	<td class="content1">
+<p class="ueberschrift-1">１. Was macht dieser CSS-Code?<br /></p>
+<p class="ueberschrift-2">Hier kannst Du bestimmen, wie bestimmte Elemente auf Deiner Webseite aussehen und<br /> 
+reagieren, zum Beispiel, ob sie sichtbar sind oder wie ein klickbarer Text-Link dargestellt wird.</p>
+	            
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+#text1 {
+display: none; 			/* Versteckt den Text am Anfang – 
+				   wird später per Klick sichtbar gemacht */
+margin-top: 10px; 		/* Fügt oben einen Abstand von 10 Pixeln ein, 
+				   damit der Text nicht direkt an anderen Elementen klebt */
+}
+
+.toggle-link {
+cursor: pointer; 		/* Ändert den Mauszeiger zur Hand – 
+				   zeigt dem Nutzer: „Das kann man anklicken“ */
+color: blue; 			/* Färbt den Text blau – 
+				   wirkt wie ein klassischer Link */
+text-decoration: underline; 	/* Unterstreicht den Text – 
+				   damit er noch mehr wie ein Link aussieht */
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830;<code class="code-con">#text1</code><br /></em>
+&#9656; Das ist ein sogenannter CSS-Selektor.<br />
+&#9656; Die <code class="code-con">#</code> bedeutet: „Suche ein Element mit der ID <code class="code-con">text1</code>".<br />
+&#9656; Dieser Stil gilt für das hier im HTML:<br /></p>
+	            
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+&lt;div id="text1"&gt;...&lt;/div&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">→ Erklärung der Eigenschaften: <br /></em>
+<code class="code-con">display: none;</code><br />
+&#9656; Der Text ist unsichtbar, wenn die Seite geladen wird.<br />
+&#9656;  Erst per Klick (über JavaScript) wird er eingeblendet.<br />
+<code class="code-con">margin-top: 10px;</code><br />
+&#9656; Fügt oben 10 Pixel Abstand ein, damit der Text beim Anzeigen nicht direkt<br />
+&nbsp;&nbsp;&nbsp;
+an anderen Elementen klebt.<br /><br /></p>
+	            
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+.toggle-link {
+cursor: pointer;
+color: blue;
+text-decoration: underline;
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830;<code class="code-con">.toggle-link</code><br /></em>
+&#9656; Das ist ein Klassen-Selektor (erkennbar am Punkt <code class="code-con">.</code> ).<br />
+&#9656; Gilt für alle Elemente mit der Klasse <code class="code-con">toggle-link</code>, z. B.:</p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+&lt;span class="toggle-link"&gt;ANZEIGETEXT&lt;/span&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div><p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">→ Erklärung der Eigenschaften: <br /></em>
+<code class="code-con">cursor: pointer;</code><br />
+&#9656; Der Mauszeiger wird zur Hand und zeigt eine anklickbare Schaltfläche an.<br />
+<code class="code-con">color: blue;</code><br />
+&#9656; Der Text wird wie ein klassischer Link blau angezeigt.<br />
+<code class="code-con">text-decoration: underline;</code><br />
+&#9656; Der Text wird unterstrichen, um ihn als Link kenntlich zu machen.<br /><br />
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830; Was kannst Du anpassen?<br /></em>
+<code class="code-con">color:</code> → Ändere die Textfarbe nach Deinem Geschmack.<br />
+Beispiel: <code class="code-con">color: #aa8800;</code> ergibt einen goldenen Ton.<br />
+<code class="code-con">text-decoration:</code> → Beim Weglassen der Unterstreichung <code class="code-con">none</code> schreiben.<br />
+<code class="code-con">cursor:</code> → Wenn Du keinen Link-Effekt willst, kannst Du <code class="code-con">pointer</code> weglassen.<br /><br /></p>
+
+
+
+
+<p class="ueberschrift-1">Extra: Hover-Effekt<br /></p>
+<p class="ueberschrift-2">Du kannst einen Hover-Effekt hinzufügen für die Akzentuierung eines Links beim Überfahren mit der Maus, ohne ihn zu anzuklicken.</p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+.toggle-link:hover {
+color: darkblue;            	/* Wenn man mit der Maus über den Text fährt (Hover),
+                                   ändert sich die Schriftfarbe zu Dunkelblau */
+text-decoration: none; 		/* Die Unterstreichung verschwindet beim Darüberfahren –
+				   das wirkt etwas dezenter und moderner */
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;">
+&#9656; Sobald man mit der Maus über den Text fährt (ohne zu klicken):<br />
+– wird die Farbe dunkelblau<br />
+– die Unterstreichung verschwindet<br />
+✦ Das macht den Effekt dezenter und moderner.<br /><br /></p>
+
+<p class="ueberschrift-1">２. JavaScript mit Kommentaren<br /></p>
+<p class="ueberschrift-2">Du kannst diesen Code entweder im <code class="code-con">&lt;head&gt;</code> oder ganz unten im <code class="code-con">&lt;body&gt;</code> einfügen.<br /> 
+ Empfohlen ist, es am Ende des <code class="code-con">&lt;body&gt;</code> einzufügen, damit das HTML vorher vollständig geladen wird.<br />
+Falls Du ihn im <code class="code-con">&lt;head&gt;</code> verwendest, achte darauf, dass die Seite klein ist und die eingebundenen Elemente
+(wie <code class="code-con">#text1</code>) schon beim Laden vorhanden sind.</p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+&lt;!-- JavaScript – am besten unten im Body oder im Head --&gt;
+&lt;script&gt;
+// Die Funktion "toggle" wird aufgerufen, wenn jemand auf den Anzeigetext klickt.
+function toggle(controlId) {
+
+// Holt das HTML-Element mit der übergebenen ID (z. B. "text1")
+var elem = document.getElementById(controlId);
+
+// Prüft, ob das Element gerade nicht sichtbar ist
+if (elem.style.display === "none" || elem.style.display === "") {
+
+// Wenn ja, dann zeige es an
+elem.style.display = "block";
+
+} else {
+// Wenn es bereits sichtbar ist, dann verstecke es
+elem.style.display = "none";
+}
+}
+&lt;/script&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Erklärung:<br /></em>
+Dieses kleine JavaScript regelt die Sichtbarkeit eines bestimmten Bereichs auf der Webseite, je nachdem, ob man darauf geklickt hat. <br />
+Die Funktion <code class="code-con">toggle()</code>  bekommt eine ID (z. B. <code class="code-con">#text1</code>) und steuert dann die Anzeige des passenden Elements.<br /></p>
+                </td>
+				</tr>
+				</table>
+	<br /><p style="color: #1a0c1a; text-shadow: 1px 1px 0 #f0f0f0, 1px -1px 0 #f0f0f0, -1px 1px 0 #f0f0f0, -1px -1px 0 #f0f0f0, 1px 0px 0 #f0f0f0, 0px 1px 0 #f0f0f0, -1px 0px 0 #f0f0f0, 0px -1px 0 #f0f0f0;">
+                Das war's auch schon von mir. &#128522;<br/>
+    				Verfasst am 28.Mai 2008, aktualisiert am 18.Juli 2025</p> 
+<!-- Sep End -->													
+</td>	<tr>
+		<td>               <div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding02.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+</td>
+	</tr>
+		<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>

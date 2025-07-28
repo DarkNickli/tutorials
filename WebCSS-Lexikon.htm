@@ -1,0 +1,751 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<title>»DarkNickli`s Tutorials«</title>
+
+<style>
+body {
+  font-family: "Lucida Sans",Verdana;
+  font-size: 14px;
+  background-image: url('file:///C:/Users/black/Desktop/BG2.png');
+  background-color: #1a0c1a;
+  color: #1a0c1a;
+  margin: 0;
+  padding: 0;
+}
+        
+.highlight {background-color:#D4AF37;}
+        
+#container {
+  margin: 20px auto;
+  width: 1300px;
+  height: auto;
+  background-image: url('file:///C:/Users/black/Desktop/BG2.png');
+  padding-bottom: 0px;
+}
+
+#banner {
+  border-style: none;
+  border-color: inherit;
+  border-width: medium;
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  background-size: cover;
+  background-image: url('file:///C:/Users/black/Desktop/BannerDN.jpg');
+  background-position: center;
+  text-align: center;
+}
+       
+/* Navigation Menu */
+.submenu {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: left; 
+  background-color: #b0acb0;
+  border: 1px solid #D4AF37;
+  padding: 10px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  color: #1a0c1a;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;        
+}
+
+.submenu a {
+  margin: 0 15px;
+  font-size: 1.2em;
+  color: #1a0c1a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #7d6d7d;         
+}
+
+#dropdown2 {background-color: #b0acb0;
+  position: relative;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 6px;
+  margin-left: -17px; 
+  margin-right: -20px; 
+  width: calc(100% + 38px); 
+  margin-bottom: -10px;
+  -webkit-box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+  -moz-box-shadow: 0px 0px 0px 3px rgba(26,12,26,1);
+  box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+    }
+
+#inhalt {
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  text-align: center;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  border: 1px solid #D4AF37;
+  background-color: #7d6d7d;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+        
+#inhalt-inner {
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 4px; 
+  height: 18px;
+  color: #ededed; 
+  text-transform:uppercase;
+  text-shadow: 5px 5px 5px #292727;
+}
+        
+h2, h3, h4{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  height: 18px;
+  color: #1a0c1a; 
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;   
+}
+        
+h3{
+  margin: -5px 0 15px;
+}
+        
+h4 {
+  margin: 0px 0 15px;
+}
+        
+h5 {
+  font-family: "Lucida Sans",Verdana; 
+  margin: 0px 0 15px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  color: #1a0c1a;
+}
+
+h5 a{
+  color: #1a0c1a;
+  text-decoration: none;
+}
+
+h5 a:hover{
+  color: #7d6d7d;
+}
+
+.preview{
+  box-shadow: #292727 0px 0.0625em 0.0625em, #292727 0px 0.125em 0.5em, #292727 0px 0px 0px 1px inset;
+}
+        
+ #protab {
+  margin-left: auto;
+  margin-right: auto;
+}
+        
+#program{
+  text-transform:uppercase;
+  font-family:Verdana,Verdana;
+  letter-spacing: 1px; 
+  font-size: 13px;
+  text-shadow: 0px 0px 3px #fff, 1px 1px 0px #fff;
+  width: auto;
+  height: 20px;
+  background-color: #b0acb0;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+
+}
+         
+  hr {
+  width: 25%;            
+  border: 0;             
+  border-top: 1px solid #1a0c1a;
+  margin-top: 2px;
+  margin-bottom:5px;
+} 
+         
+#info1{ 
+  position: relative;
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  padding: 20px 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+#info1::before {
+  content: 'Information';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: auto;
+  height: 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#info2 {  
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  position: relative;
+  padding: 55px 20px 20px;
+  min-padding: 55px 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  counter-increment: step; 
+}
+
+/* Dekorationselement in der Zelle */
+#info2::before {
+  content: 'CSS-Eigenschaften'; 
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  width: 739px;
+  padding: 5px 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.content1, .content2{
+  color: #1a0c1a;
+  font-family:Verdana,Verdana, Verdana;
+  letter-spacing: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+        
+ /* Vorwort */    
+.content2{
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  letter-spacing: 0px;
+}
+
+.note{
+  text-decoration: none;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+.mat{font-family: "Lucida Sans",Verdana;   font-size: 18px; ;
+}
+
+/* Codebox */ 
+.code-block {text-align: left;
+  position: relative;
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 25px;
+  border-radius: 6px;
+  font-family: monospace;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.code {   text-shadow: none; 
+  max-width: 678px;             
+  overflow-x: auto;             
+  white-space: pre;   
+}
+
+.code-con { 
+  border-radius: 3px; 
+  background-color:#b1b1b1; 
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Fext-Effekt */ 
+.uebe {font-size: 35px;
+  font-family: 'Playfair Display', serif;
+  color: #bddaf8;
+  font-style: italic;
+  text-shadow: 1px 1px #72abaa;
+}
+    
+.uebe:first-letter {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: #f5d3f8;
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 1px #d53ada;
+} 
+
+/* ueberschrift1+2 */
+.ueberschrift-1 {
+text-align: left;
+text-decoration: underline; 
+font-family: Tahoma, Geneva, sans-serif;
+margin-bottom: 4px; 
+margin-top: 5px; 
+font-size:18px; 
+font-style: normal;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+/* a-z Bar */
+  .submenu-table {
+    width: 100%;
+    height: 20px;
+    table-layout: fixed;
+  }
+
+  .submenu-table td {
+    vertical-align: middle;
+  }
+
+  .az-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .az-bar a {
+    text-decoration: none;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .az-bar a:hover {
+    background-color: #444;
+    color: #fff;
+  }
+
+
+  .az-left, .az-right {
+    width: 20%;
+    white-space: nowrap;
+  }
+
+  .az-center {
+    width: 60%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .az-bar {
+      font-size: 11px;
+      gap: 4px;
+    }
+
+    .az-left, .az-right {
+      width: 25%;
+    }
+
+    .az-center {
+      width: 50%;
+    }
+</style>
+</head><body>
+<div id="container">
+<table  align="center" id="inhalt">
+	<tr>
+		<td id="banner">
+		</td>
+	</tr>
+	<tr>
+            <td>
+<div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px;width: 313px;">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding01.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;
+                        
+                        </td>
+                        
+                        <td style="height: 20px; text-align: center;">
+    <td class="az-center">
+      <div class="az-bar">
+        <a href="#a"><strong>A</strong></a>
+        <a href="#b"><strong>B</strong></a>
+        <a href="#c"><strong>C</strong></a>
+        <a href="#d"><strong>D</strong></a>
+        <a href="#f"><strong>F</strong></a>
+        <a href="#g"><strong>G</strong></a>
+        <a href="#h"><strong>H</strong></a>
+        <a href="#i"><strong>I</strong></a>
+        <a href="#l"><strong>L</strong></a>
+        <a href="#m"><strong>M</strong></a>
+        <a href="#o"><strong>O</strong></a>
+        <a href="#p"><strong>P</strong></a>
+        <a href="#q"><strong>Q</strong></a>
+        <a href="#r"><strong>R</strong></a>
+        <a href="#s"><strong>S</strong></a>
+        <a href="#t"><strong>T</strong></a>
+        <a href="#v"><strong>V</strong></a>
+        <a href="#w"><strong>W</strong></a>
+        <a href="#z"><strong>Z</strong></a>
+      </div>
+    </td>
+
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+            </td>
+		        </tr>
+		        <tr>
+		        <td id="inhalt-inner" cellspacing="0" cellpadding="2" ><h1>CSS-Lexikon: Layout &amp; Design</h1>
+		        <h1 style="font-size: 15px; line-height: 20px; letter-spacing: 1px; margin-top:7px;">css</h1>
+				<br />
+<!-- Web-Cod -->
+				<br />
+				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
+				<tr>
+				<td class="content1">
+<p class="ueberschrift-1"id="a">A – Animation &amp; Transition<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+animation               		/* Animation aktivieren */
+animation-name          		/* Name der Animation */
+animation-duration      		/* Dauer der Animation */
+animation-timing-function 		/* Zeitverlauf (linear, ease etc.) */
+animation-delay         		/* Verzögerung vor Start */
+animation-iteration-count 		/* Anzahl Wiederholungen */
+animation-direction     		/* Richtung (normal, reverse etc.) */
+transition              		/* Übergänge aktivieren */
+transition-property     		/* Eigenschaften für Übergang */
+transition-duration     		/* Übergangsdauer */
+transition-timing-function /* Zeitverlauf */
+transition-delay        		/* Übergangsverzögerung */
+aspect-ratio            		/* Seitenverhältnis festlegen */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="b">B – Box &amp; Background<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+background              		/* Hintergrund zusammengefasst */
+background-color        		/* Hintergrundfarbe */
+background-image        		/* Hintergrundbild */
+background-position     		/* Position des Bildes */
+background-repeat       		/* Wiederholung des Bildes */
+background-size         		/* Größe des Hintergrundbildes */
+background-attachment   		/* Scrollverhalten */
+background-blend-mode   		/* Mischmodus */
+backdrop-filter         		/* Filter hinter transparenten Bereichen */
+border                  		/* Rahmen zusammengefasst */
+border-color            		/* Rahmenfarbe */
+border-style            		/* Rahmenstil */
+border-width            		/* Rahmenbreite */
+border-radius           		/* Abgerundete Ecken */
+border-top / right / bottom / left 	/* Einzelseiten */
+border-collapse         		/* Tabellenrahmen zusammenführen */
+border-spacing          		/* Tabellenrahmenabstand */
+box-shadow              		/* Schattierung */
+box-sizing              		/* Box-Modell wählen */
+bottom                  		/* Abstand nach unten */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="c">C – Clip &amp; Content<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+clip                    		/* Bereich beschneiden (veraltet) */
+clip-path               		/* Bereich beschneiden (modern) */
+content                 		/* Inhalt generieren */
+counter-increment       		/* Zähler erhöhen */
+counter-reset           		/* Zähler zurücksetzen */
+cursor                  		/* Mauszeigerform */
+caption-side            		/* Tabellenüberschrift positionieren */
+color                   		/* Textfarbe */
+contain                 		/* Begrenzung des Rendering-Bereichs */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="d">D – Display &amp; Direction<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+display:                        	/* Anzeigeart (block, flex, grid etc.) */
+direction:                      	/* Schreibrichtung (ltr oder rtl) */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="f">F – Flexbox<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+float                   		/* Element umfließen lassen */
+font                    		/* Schrift zusammengefasst */
+font-family             		/* Schriftart */
+font-size               		/* Schriftgröße */
+font-style              		/* Schriftstil (italic etc.) */
+font-variant            		/* Kapitälchen etc. */
+font-weight             		/* Schriftstärke */
+flex                    		/* Flex-Eigenschaft */
+flex-direction          		/* Richtung der Flex-Elemente */
+justify-content         		/* Hauptachsen-Ausrichtung */
+align-items             		/* Querachsen-Ausrichtung */
+align-content           		/* Mehrzeilige Flex-Ausrichtung */
+flex-wrap               		/* Umbruch zulassen */
+gap                    			/* Abstand zwischen Items */
+order                  			/* Reihenfolge von Items */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="g">G – Grid<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+grid;                  			/* Grid-Layout aktivieren */
+grid-template-columns   		/* Spalten definieren */
+grid-template-rows      		/* Zeilen definieren */
+grid-column             		/* Spaltenposition */
+grid-row                		/* Zeilenposition */
+gap / grid-gap          		/* Abstände */
+place-items             		/* Zentrierung */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="h">H – Height<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+height                  		/* Höhe */
+min-height              		/* Mindesthöhe */
+max-height              		/* Maximalhöhe */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="i">I – Isolation<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+isolation               		/* Isolierung bei Mischmodi */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="l">L – Layout &amp; Letter<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+left                    		/* Abstand von links */
+letter-spacing          		/* Buchstabenabstand */
+line-height             		/* Zeilenhöhe */
+list-style              		/* Aufzählung */
+list-style-image        		/* Symbolbild */
+list-style-type         		/* Symboltyp */
+list-style-position     		/* Symbolposition */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="m">M – Margin &amp; Max/Min<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+margin                  		/* Außenabstand */
+margin-top / bottom / left / right 	/* Einzelseiten */
+max-width               		/* Maximalbreite */
+min-width               		/* Mindestbreite */
+@media                  		/* Media Query Regel */
+@media screen and (...) 		/* Gerätetyp &amp; Bedingungen */
+@media (prefers-color-scheme) 		/* Farbschema */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="o">O – Object &amp; Overflow<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+object-fit              		/* Skalierung von Bildern/Videos */
+object-position         		/* Position von Objekten */
+outline                 		/* Umrandung */
+outline-color           		/* Umrandungsfarbe */
+outline-style           		/* Umrandungsart */
+outline-width           		/* Umrandungsbreite */
+overflow                		/* Überlaufbehandlung */
+overscroll-behavior     		/* Scrollverhalten bei Überlauf */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="p">P – Padding &amp; Position<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+padding:               			/* Innenabstand */
+padding-top / bottom / left / right:
+                       			/* Innenabstand spezifisch */
+position:              			/* Positionierung (static, relative, etc.) */
+top / bottom / left / right:
+                       			/* Versatz relativ zur Position */
+z-index:               			/* Stapelreihenfolge */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="q">Q – Quotes<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+quotes                  		/* Anführungszeichen definieren */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="r">R – Resize &amp;Right<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+resize                  		/* Größe änderbar machen */
+right                   		/* Abstand von rechts */</pre>
+</div></div><br />
+
+<p class="ueberschrift-1" id="s">S – Shadow &amp; Scroll<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+box-shadow              		/* Schattierung */
+scrollbar-color         		/* Farbe moderner Scrollleisten */
+scroll-behavior         		/* sanftes Scrollen */
+visibility              		/* Sichtbarkeit */
+will-change             		/* Performance-Optimierung */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="t">T – Text &amp; Table<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+text-align              		/* Textausrichtung */
+text-decoration         		/* Textdekoration */
+text-indent             		/* Einzug */
+text-transform          		/* Groß-/Kleinschreibung */
+table-layout            		/* Tabellenlayout */
+top                     		/* Abstand von oben */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="v">V – Visibility &amp; Vertical<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+visibility              		/* Sichtbarkeit */
+vertical-align          		/* Vertikale Ausrichtung */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="w">W – White &amp; Word<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+white-space             		/* Umbruchverhalten */
+word-spacing            		/* Wortabstand */</pre>
+</div></div><br />
+<p class="ueberschrift-1" id="z">Z – Z-Index<br /></p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <pre class="code">
+z-index                 		/* Ebenenstapel */</pre>
+</div></div><br />
+Eigene Zusammenstellung der CSS-Eigenschaften für Bildungszwecke.
+	                </td>
+				</tr>
+				</table>
+	<p style="color: #1a0c1a; text-shadow: 1px 1px 0 #f0f0f0, 1px -1px 0 #f0f0f0, -1px 1px 0 #f0f0f0, -1px -1px 0 #f0f0f0, 1px 0px 0 #f0f0f0, 0px 1px 0 #f0f0f0, -1px 0px 0 #f0f0f0, 0px -1px 0 #f0f0f0;">
+                Das war's auch schon von mir. &#128522;<br/>
+    			Verfasst am 25. Januar 2006, aktualisiert und an den heutigen Stand angepasst am 21. Juli 2025.</p> 
+<!-- Sep End -->													
+</td>	<tr>
+		<td>               <div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding01.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+</td>
+	</tr>
+		<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>

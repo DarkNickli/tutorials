@@ -1,0 +1,972 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>»DarkNickli`s Tutorials«</title>
+<style>
+body {
+  font-family: "Lucida Sans",Verdana;
+  font-size: 14px;
+  background-image: url('file:///C:/Users/black/Desktop/BG2.png');
+  background-color: #1a0c1a;
+  color: #1a0c1a;
+  margin: 0;
+  padding: 0;
+}
+        
+.highlight {background-color:#D4AF37;}
+        
+#container {
+  margin: 20px auto;
+  width: 1300px;
+  height: auto;
+  background-image: url('file:///C:/Users/black/Desktop/BG2.png');
+  padding-bottom: 0px;
+}
+
+#banner {
+  border-style: none;
+  border-color: inherit;
+  border-width: medium;
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  background-size: cover;
+  background-image: url('file:///C:/Users/black/Desktop/BannerDN.jpg');
+  background-position: center;
+  text-align: center;
+}
+       
+/* Navigation Menu */
+.submenu {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: left; 
+  background-color: #b0acb0;
+  border: 1px solid #D4AF37;
+  padding: 10px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  color: #1a0c1a;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;        
+}
+
+.submenu a {
+  margin: 0 15px;
+  font-size: 1.2em;
+  color: #1a0c1a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #7d6d7d;         
+}
+
+#dropdown2 {background-color: #b0acb0;
+
+  position: relative;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 6px;
+  margin-left: -17px; 
+  margin-right: -20px; 
+  width: calc(100% + 38px); 
+  margin-bottom: -10px;
+  -webkit-box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+  -moz-box-shadow: 0px 0px 0px 3px rgba(26,12,26,1);
+  box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
+    }
+
+#inhalt {
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  text-align: center;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  border: 1px solid #D4AF37;
+  background-color: #7d6d7d;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+        
+#inhalt-inner {
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 4px; 
+  height: 18px;
+  color: #ededed; 
+  text-transform:uppercase;
+  text-shadow: 5px 5px 5px #292727;
+}
+        
+h2, h3, h4{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  height: 18px;
+  color: #1a0c1a; 
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;   
+}
+        
+h3{
+  margin: -5px 0 15px;
+}
+        
+h4 {
+  margin: 0px 0 15px;
+}
+        
+h5 {
+  font-family: "Lucida Sans",Verdana; 
+  margin: 0px 0 15px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  color: #1a0c1a;
+}
+
+h5 a{
+  color: #1a0c1a;
+  text-decoration: none;
+}
+
+h5 a:hover{
+  color: #7d6d7d;
+}
+
+.preview{
+  box-shadow: #292727 0px 0.0625em 0.0625em, #292727 0px 0.125em 0.5em, #292727 0px 0px 0px 1px inset;
+}
+        
+ #protab {
+  margin-left: auto;
+  margin-right: auto;
+}
+        
+#program{
+  text-transform:uppercase;
+  font-family:Verdana,Verdana;
+  letter-spacing: 1px; 
+  font-size: 13px;
+  text-shadow: 0px 0px 3px #fff, 1px 1px 0px #fff;
+  width: auto;
+  height: 20px;
+  background-color: #b0acb0;
+  border: 1px solid #D4AF37;
+  color: #1a0c1a;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+
+}
+         
+  hr {
+  width: 25%;            
+  border: 0;             
+  border-top: 1px solid #1a0c1a;
+  margin-top: 2px;
+  margin-bottom:5px;
+} 
+         
+#info1{ 
+  position: relative;
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  padding: 20px 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+#info1::before {
+  content: 'Information';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: auto;
+  height: 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#info2 {  
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  position: relative;
+  padding: 55px 20px 20px;
+  min-padding: 55px 20px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  counter-increment: step; 
+}
+
+/* Dekorationselement in der Zelle */
+#info2::before {
+  content: 'Erklärungen: '; 
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  width: 739px;
+  padding: 5px 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#info3 {
+  position: relative;
+  background-image: url('file:///C:/Users/black/Desktop/BG1.png');
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #D4AF37;
+  border-bottom: 5px solid #1a0c1a;
+  border-right: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+#info3::before {
+  content: 'Web-Programmierung';
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  width: auto;
+  height: 20px;
+  background-color: #1a0c1a;
+  border: 1px solid #D4AF37;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+  color: #f0f0f0;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+.content1, .content2{
+  color: #1a0c1a;
+  font-family:Verdana,Verdana, Verdana;
+  letter-spacing: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+        
+ /* Vorwort */    
+.content2{
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  letter-spacing: 0px;
+}
+
+.note{
+  text-decoration: none;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+.mat{font-family: "Lucida Sans",Verdana;   font-size: 18px; ;
+}
+
+/* Codebox */ 
+.code-block {text-align: left;
+  position: relative;
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 25px;
+  border-radius: 6px;
+  font-family: monospace;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background-color: #ededed;
+  color: black;
+}
+
+.copy-btn svg {
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.copy-btn::after {
+  content: "In die Zwischenablage";
+  position: absolute;
+  top: -28px;
+  right: 0;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.7em;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-btn:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.code-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 8px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  font-family: sans-serif;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.9;
+  z-index: 5;
+  text-shadow: none;
+}
+
+.code {   text-shadow: none; 
+  max-width: 678px;             
+  overflow-x: auto;             
+  white-space: pre;   
+}
+
+.code-con { 
+  border-radius: 3px; 
+  background-color:#b1b1b1; 
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* ueberschrift1+2 */
+.ueberschrift-1 {
+text-align: left;
+text-decoration: underline; 
+font-family: Tahoma, Geneva, sans-serif;
+margin-bottom: 4px; 
+margin-top: 5px; 
+font-size:18px; 
+font-style: normal;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+.ueberschrift-2 {
+text-align: left;
+margin-left: 10px;
+margin-bottom: 0px; 
+margin-top: 0px; 
+margin-right: 0px;
+}
+/* vorschau-menue */
+.box {
+  width: 13%;
+  margin: 0px auto 0 auto;
+}
+
+a.menu {
+  display: block;
+  font-weight: bold;
+  padding: 3px;
+  margin: 1px;
+  background: #251232;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: Georgia;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #ebe7e8;
+}
+
+a.menu:hover {
+  display: block;
+  padding: 5px;
+  margin: 2px;
+  background: #ac7ca9;
+  color: #000000;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #ebe7e8;
+}
+
+
+
+
+</style>
+<!-- SCRIPT: Toggle-Menue  -->
+<script>
+function toggle(controlId) {
+var elem = document.getElementById(controlId);
+
+if (elem.style.display === "none" || elem.style.display === "") {
+elem.style.display = "block"; // Zeige das Element
+} else {
+elem.style.display = "none"; // Verstecke das Element
+}
+}
+</script>
+
+
+
+
+
+<!-- SCRIPT: Kopier den Bereich -->
+<script>
+function copyBereich(button) {
+  const codeBlock = button.closest(".code-block").querySelector(".code");
+  const text = codeBlock.innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+    const original = button.innerHTML;
+    button.innerHTML = "✓️ Kopiert!";
+    button.disabled = true;
+
+    setTimeout(() => {
+      button.innerHTML = original;
+      button.disabled = false;
+    }, 1500);
+  });
+}
+</script>
+
+
+
+</head><body>
+<div id="container">
+<table  align="center" id="inhalt">
+	<tr>
+		<td id="banner">
+		</td>
+	</tr>
+	<tr>
+            <td>
+<div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding02.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+            </td>
+		        </tr>
+		        <tr>
+		        <td id="inhalt-inner" cellspacing="0" cellpadding="2" ><h1>Tabellen-Menü</h1>
+		        <h1 style="font-size: 15px; line-height: 20px; letter-spacing: 1px; margin-top:7px;">HTML</h1>
+				<br />
+				<br /> 
+				<br /><em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration:  none;">&#9830;Beispiel:</em>&#9656; 
+<!-- Navigation mit Tabelle -->
+<div class="box">
+<table cellspacing="2" style="width: 100%">
+  <tr>
+    <td align="center"><a href="" class="menu">Home</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="" class="menu">News</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="" class="menu">Kontakt</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="" class="menu">Credits</a></td>
+  </tr>
+</table>
+</div>
+
+				<br />
+				<br />
+				<br />
+<!-- Web-Cod -->
+				<br />
+				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info3" align="center" valign="top">
+				<tr>
+				<td class="content2">
+Kopiere den folgenden Code und setze ihn in den <code class="code-con">&lt;body&gt;</code>-Bereich Deiner Webseite.
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+ &lt;div class="box"&gt;
+&lt;table cellspacing="2" style="width: 100%;"&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;a href="" class="menu"&gt;Home&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;a href="" class="menu"&gt;News&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;a href="" class="menu"&gt;Kontakt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;a href="" class="menu"&gt;Credits&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+             Kopiere den Stil-Code in Deine <code class="code-con">CSS-Datei</code>.<br/>
+             Du kannst die Farben anschließend an Dein Design anpassen.
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+ .box {
+width: 13%;
+margin: 116px auto 0 auto;
+}
+
+a.menu {
+display: block;
+font-weight: bold;
+padding: 3px;
+margin: 1px;
+background: #6b019b;
+color: #FFFFFF;
+font-size: 13px;
+font-family: Georgia;
+font-style: italic;
+text-transform: uppercase;
+text-decoration: none;
+border: 1px solid #FFFFFF;
+}
+
+a.menu:hover {
+display: block;
+padding: 5px;
+margin: 2px;
+background: #e5abff;
+color: #000000;
+font-size: 13px;
+text-transform: uppercase;
+text-decoration: none;
+border: 1px solid #000000;
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+                </td>
+				</tr>
+				</table>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+<!-- Web-Cod -->
+	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
+	<tr>
+	<td class="content1">
+<p class="ueberschrift-1">１. HTML-Struktur<br /></p>
+<p class="ueberschrift-2">Wir beginnen mit einem einfachen HTML-Menü, das in einer Tabelle aufgebaut ist:</p>
+	            
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+&lt;!-- Tabelle mit 2 Pixel Zellabstand und einer Gesamtbreite von 13% --&gt;
+&lt;table cellspacing="2" style="width: 13%"&gt;
+
+&lt;!-- Erste Zeile: Menüpunkt "Home" --&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;
+&lt;a href="" class="menu"&gt;Home&lt;/a&gt; &lt;!-- Link mit der CSS-Klasse "menu" --&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- Zweite Zeile: Menüpunkt "News" --&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;
+&lt;a href="" class="menu"&gt;News&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- Dritte Zeile: Menüpunkt "Kontakt" --&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;
+&lt;a href="" class="menu"&gt;Kontakt&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;!-- Vierte Zeile: Menüpunkt "Credits" --&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;
+&lt;a href="" class="menu"&gt;Credits&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.2em;margin-bottom:4px;text-decoration: one;">&#9830; Was passiert hier? Und was kannst du ändern?<br /></em>
+<u>1. Menüpunkt: Home</u><br />
+Ein Link mit dem Text <em>„Home“</em> wird in der ersten Zeile <br />der Tabelle zentriert dargestellt.<br />
+&#9656; Was kannst Du ändern?<br />
+Du kannst den Text z. B. durch <em>„Startseite“</em> oder <em>„Dashboard“</em> ersetzen.<br /><br />
+<u>2. Menüpunkt: News</u><br />
+Der zweite Link zeigt den Text <em>„News“</em> an – unterhalb von <em>„Home“</em>.<br />
+&#9656; Was kannst Du ändern?<br />
+Ändere den Text z. B. in <em>„Aktuelles“</em>, <em>„Blog“</em> oder <em>„Neuigkeiten“</em>.<br /><br />
+<u>3. Menüpunkt: Kontakt</u><br />
+Der dritte Link bietet den Menüpunkt <em>„Kontakt“</em>.<br />
+&#9656; Was kannst Du ändern?<br />
+Ersetze ihn z. B. durch <em>„Support“</em>, <em>„Nachricht senden“</em> oder <em>„Schreib mir</em>“.<br /><br />
+<u>4. Menüpunkt: Credits</u><br />
+Ganz unten erscheint der Link <em>„Credits“</em>, also Hinweise auf Mitwirkende.<br />
+&#9656; Was kannst Du ändern?<br />
+Du kannst stattdessen <em>„Impressum“</em>, <em>„Über mich“</em>, <em>„Team“</em> oder <em>„Danksagung“</em> verwenden.<br /><br />
+<u>Tipp:</u><br />
+Du kannst jederzeit weitere Zeilen hinzufügen oder entfernen. <br />
+Achte darauf, dass Du für jede neue Zeile immer einen <code class="code-con">&lt;tr&gt;</code> und <code class="code-con">&lt;td&gt;</code> <br />Block verwendest, wie bei den vorhandenen Menüpunkten.<br /><br /></p>
+<p class="ueberschrift-1">２. Die <code class="code-con">.box</code>-Klasse (Layout des Containers)<br /></p>
+<p class="ueberschrift-2">Jetzt geben wir dem Menü das passende Aussehen mit CSS.</p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+         		 /* Container-Box für das Menü – zentriert auf der Seite */
+.box {
+width: 13%; 		 /* Breite der Box – passend zur Tabelle */
+margin: 0px auto 0 auto; /* Oben/und unten 0px Abstand, links/rechts auto = zentriert */
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div><p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Was passiert hier?<br /></em>
+&#9656; .box ist eine CSS-Klasse für einen umgebenden Block<br /> &nbsp;&nbsp;&nbsp; (z. B. <code class="code-con">&lt;div class="box"&gt;</code>).<br />
+&#9656; Mit dieser CSS-Klasse wird das Tabellenmenü mittig auf der Seite angezeigt.<br />
+&#9656; Die <code class="code-con">width: 13%</code> sorgt dafür, dass die Box genau so breit ist wie die Tabelle<br /> &nbsp;&nbsp; (ebenfalls 13%).<br /><br />
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Was kannst Du ändern?<br /></em>
+&#9656; Breite anpassen:<br />
+Ändere <code class="code-con">13%</code> z. B. auf <code class="code-con">20%</code>, <code class="code-con">300px</code> oder <code class="code-con">auto</code>, wenn Du mehr oder<br />
+weniger Platz brauchst.<br />
+&#9656; Abstand hinzufügen:<br />
+Wenn Du oben etwas Platz einfügen möchtest, kannst Du den oberen<br /> margin-Wert anpassen.<br />
+→ Dann ändere z. B.<code class="code-con"> margin: 40px auto 0 auto;</code><br />
+&#9656; Box für andere Inhalte verwenden:<br />
+Die <code class="code-con">.box</code>-Klasse ist vielseitig. Du kannst sie auch für Texte, Bilder oder<br /> andere Menüs nutzen.</p>
+<p class="ueberschrift-2">Beispiel-Einsatz:</p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">html</div>
+  <pre class="code">
+&lt;!-- Container-Box für das Menü --&gt;
+&lt;div class="box"&gt;
+&lt;!-- Menü kommt hier rein --&gt;
+
+&lt;!-- Hinweis:
+Wenn Du möchtest, dass das Menü weiter unten auf der Seite erscheint,
+kannst du z. B. in der CSS-Klasse .box den oberen Abstand anpassen:
+margin-top: 40px; (fügt z. B. 40 Pixel Abstand von oben hinzu)
+--&gt;
+&lt;/div&gt;</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div><p style="text-align: left;width: 628px;padding-left: 50px;">
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Warum ist das hilfreich?<br /></em>
+Die <code class="code-con">.box</code>-Klasse bestimmt, wo Dein Menü auf der Seite positioniert wird.<br />
+So kannst Du es einfach nach rechts oder unten verschieben, ohne den Menü-Inhalt selbst anzupassen.<br />
+Das ist besonders praktisch, wenn Du mit festen Layouts oder Seitenrändern arbeitest.<br /><br /></p>
+<p class="ueberschrift-1">３. Die <code class="code-con">.menu</code>-Klasse – Menü-Links im Normalzustand<br /></p>
+<p class="ueberschrift-2">Hier legst Du die Größe, Hintergrundfarbe, Schriftart und den Rahmen der Menü-Links fest:</p>
+	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+/* Grundstil für die Menülinks */
+a.menu {
+display: block; 	/* Link als Blockelement – nimmt die volle Breite ein */
+font-weight: bold; 	/* Fettschrift */
+padding: 3px; 		/* Innenabstand zum Rand */
+margin: 1px; 		/* Außenabstand zwischen den Links */
+background: #251232; 	/* Dunkler violettbrauner Hintergrund */
+color: #FFFFFF; 	/* Weißer Text */
+font-size: 13px; 	/* Schriftgröße */
+font-family: Georgia; 	/* Serifenschrift für klassischen Look */
+font-style: italic; 	/* Kursivschrift */
+text-transform: uppercase; /* Alle Buchstaben werden groß geschrieben */
+text-decoration: none; 	   /* Keine Unterstreichung */
+border: 1px solid #ebe7e8; /* Heller Rahmen */
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+
+<p style="text-align: left;width: 628px;padding-left: 50px;"><em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Erklärung der CSS-Eigenschaften<br /></em>
+&#9656; <code class="code-con">display: block;</code> → Jeder Link wird als 
+Block-Element dargestellt, <br />&nbsp;&nbsp;&nbsp; wie ein Kasten mit voller Breite.<br />
+&#9656; <code class="code-con">font-weight: bold;</code> → Der Text wird fett dargestellt.<br />
+&#9656; <code class="code-con">padding: 3px;</code> → Innenabstand: Der Text hat 3 Pixel Abstand zum Rand.<br />
+&#9656; <code class="code-con">margin: 1px;</code> → Außenabstand: Zwischen den einzelnen Links liegt<br /> &nbsp;&nbsp;&nbsp; 1 Pixel Platz. <br />
+&#9656; <code class="code-con">background: #6b019b;</code> → Violetter Hintergrundton.<br />
+&#9656; <code class="code-con">color: #FFFFFF;</code> → Weißer Text.<br />
+&#9656; <code class="code-con">font-family: Georgia;</code>→ Die Schriftart ist Georgia.<br />
+&#9656; <code class="code-con">font-style: italic;</code> → Der Text ist kursiv gesetzt.<br />
+&#9656; <code class="code-con">text-transform: uppercase;</code> → Der gesamte Text wird automatisch in <br />&nbsp;&nbsp; Großbuchstaben dargestellt.<br />
+&#9656; <code class="code-con">text-decoration: none;</code> → Der Standard-Unterstrich von Links wird entfernt.<br />
+&#9656; <code class="code-con">border: 1px solid #FFFFFF;</code> → Weißer Rahmen mit 1 Pixel Stärke.<br /><br />
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Das kannst du anpassen<br /></em>
+&#9656; display:<br />
+<code class="code-con">block;</code> macht den Link zum Blockelement (volle Breite).<br />
+Willst Du, dass der Link nur so breit wie der Text ist, ändere zu <code class="code-con">inline-block</code>.<br />
+&#9656; font-weight:<br />
+<code class="code-con">bold;</code> für fett. Alternativ <code class="code-con">normal</code> oder <code class="code-con">lighter</code> für weniger Betonung.<br />
+&#9656; padding:<br />
+Innenabstand rund um den Text. Größer oder kleiner machen den Abstand größer/kleiner.<br />
+&#9656; margin:<br />
+Abstand zwischen den Links. Erhöhe für mehr Platz.<br />
+&#9656; background:<br />
+Hintergrundfarbe passend zum Design.<br />
+&#9656; color:<br />
+Textfarbe zur Hervorhebung vom Text.<br />
+&#9656; font-size:<br />
+Schriftgröße beliebig anpassen.<br />
+&#9656; font-family:<br />
+Schriftart kann gegen andere ersetzt werden.<br />
+&#9656; font-style:<br />
+<code class="code-con">italic</code> für kursiv. Entferne die Zeile für Standard.<br />
+&#9656; text-transform:<br />
+<code class="code-con">uppercase</code> für Großbuchstaben. Entfernen für normale Groß-/Kleinschreibung.<br />
+&#9656; text-decoration:<br />
+<code class="code-con">none</code> für keine Unterstreichung.<br />
+<code class="code-con">underline</code> oder andere Werte für Unterstreichungen.<br />
+&#9656; border:<br />
+Rahmenfarbe, -stärke und -stil nach Wunsch anpassen oder entfernen.<br /><br /></p>
+<p class="ueberschrift-1">４. Hover-Effekt – <code class="code-con">.menu:hover</code><br /></p>
+<p class="ueberschrift-2">Du kannst einen Hover-Effekt hinzufügen für die Akzentuierung eines Links beim Überfahren mit der Maus, ohne ihn zu anzuklicken.</p>
+<div class="code-container" id="meinBereich">
+<div class="code-block">
+  <div class="code-label">css</div>
+  <pre class="code">
+/* Hover-Effekt beim Darüberfahren mit der Maus */
+a.menu:hover {
+display: block; 	/* Bleibt ein Blockelement */
+padding: 5px; 		/* Etwas größerer Innenabstand beim Hover */
+margin: 2px; 		/* Etwas größerer Außenabstand beim Hover */
+background: #ac7ca9; 	/* Heller violetter Hintergrund beim Hover */
+color: #000000; 	/* Schwarzer Text beim Hover */
+font-size: 13px; 	/* Schriftgröße bleibt gleich */
+text-transform: uppercase; /* Großbuchstaben bleiben erhalten */
+text-decoration: none; 	   /* Weiterhin keine Unterstreichung */
+border: 1px solid #ebe7e8; /* Heller Rahmen bleibt erhalten */
+}</pre>
+  <button class="copy-btn" onclick="copyBereich(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
+    </svg>
+    <span>Kopieren</span>
+  </button>
+</div></div>
+<p style="text-align: left;width: 628px;padding-left: 50px;"><em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">Das kannst du anpassen<br /></em>
+&#9656; display:<br />
+Standard ist <code class="code-con">block</code>. Möchtest Du, dass der Link nur so breit wie sein Inhalt ist, ändere auf <code class="code-con">inline-block</code>.<br />
+&#9656; padding:<br />
+Vergrößere oder verkleinere den Innenabstand, um den Hover-Effekt stärker oder dezenter wirken zu lassen.<br />
+&#9656; margin:<br />
+Passe den Außenabstand an, um mehr oder weniger Abstand um den Link beim Hover zu schaffen.<br />
+&#9656; background:<br />
+Ändere die Hintergrundfarbe, z. B. in eine andere helle Farbe für den Hover-Zustand.<br />
+&#9656; color:<br />
+Wähle eine andere Textfarbe beim Hover, um den Kontrast oder das Design zu verändern.<br />
+&#9656; font-size:<br />
+Du kannst die Schriftgröße beim Hover anpassen, z. B. etwas vergrößern.<br />
+&#9656; text-transform:<br />
+Entferne oder ändere diese Eigenschaft, falls der Text beim Hover anders formatiert werden soll.<br />
+&#9656; text-decoration:<br />
+Du kannst z. B. <code class="code-con">underline</code> setzen, damit Links beim Hover unterstrichen werden.<br />
+&#9656; border:<br />
+Passe Farbe, Stärke oder Stil des Rahmens an oder entferne ihn beim Hover ganz.<br /><br />
+<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">✦ Was passiert beim Überfahren mit der Maus?<br /></em>
+&#9656; <code class="code-con">background: #e5abff;</code> → Der Hintergrund wird hellviolett.<br />
+&#9656; <code class="code-con">color: #000000;</code> → Der Text wird schwarz.<br />
+&#9656; <code class="code-con">padding: 5px;</code> &amp; <code class="code-con">margin: 2px;</code> → Der Button vergrößert sich leicht,<br /> &nbsp;&nbsp;&nbsp; und hebt sich dadurch aktiv vom Rest ab.<br />
+&#9656; <code class="code-con">border: 1px solid #000000;</code> → Der Rahmen wird schwarz statt weiß.<br />
+&#9656; Alle anderen Eigenschaften wie <code class="code-con">display</code>, <code class="code-con">font-size</code>, <code class="code-con">text-transform</code><br />
+&nbsp;&nbsp;&nbsp;
+bleiben gleich und sorgen für ein einheitliches Verhalten.<br /></p>
+                </td>
+				</tr>
+				</table>
+	<br /><p style="color: #1a0c1a; text-shadow: 1px 1px 0 #f0f0f0, 1px -1px 0 #f0f0f0, -1px 1px 0 #f0f0f0, -1px -1px 0 #f0f0f0, 1px 0px 0 #f0f0f0, 0px 1px 0 #f0f0f0, -1px 0px 0 #f0f0f0, 0px -1px 0 #f0f0f0;">
+                Das war's auch schon von mir. &#128522;<br/>
+    				Verfasst am 28.Mai 2008, aktualisiert am 18.Juli 2025</p> 
+<!-- Sep End -->													
+</td>	<tr>
+		<td>               <div>
+                  <table id="dropdown2">
+                     <tr class="submenu">
+                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding02.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
+                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
+                     </tr>
+                  </table>
+               </div>
+</td>
+	</tr>
+		<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>
