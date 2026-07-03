@@ -121,7 +121,7 @@ p {
 	padding: 15px;
 	max-width: 770px;
 	text-align: center;
-  line-height: 23px;
+    line-height: 23px;
 	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
 	margin-left: auto;
 	margin-right: auto;
@@ -379,6 +379,75 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     border-radius: 6px;
     border: 1px solid #1a0c1a;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+ /* Color Box For Text */
+ .colbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.coltextbox {
+  padding-top: 0px;
+}
+ 
+ .colrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center
+}
+
+.TW3 {
+  position: relative;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  width: 60px;
+  height: 40px;              
+  font-size: 11px;
+  font-family: Arial;
+  text-align: center;
+  color: #000;
+  text-shadow: 1px 0px 1px #b9b9b9, 1px 1px 0px #000;
+  border-radius: 6px;
+  border: 1px solid #1a0c1a;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.TW3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  width: 140%;
+  height: 2px;
+  background: red;
+  transform: rotate(-25deg);
+}
+
+ /* Color Box For Text */
+ .box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.textbox {
+  padding-top: 0px;
+}
+ 
+ .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center
 }
 
 /* ============ Position x/y-Box ============ */
@@ -683,6 +752,153 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
 
 .inactive {
     color: #929292;
+}
+
+/* ============ Color Gradient-Box ============ */
+.panel {
+    width: 150px;
+    background: #2f2f2f;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: -15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.tool-btn {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #2f2f2f;
+    background: #2f2f2f;
+    cursor: pointer;
+}
+
+.tool-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #f2f2f2;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    margin-top: -5px;
+}
+
+.verspinner {
+    width: 48px;
+    height: 20px;
+    background: #1f1f1f;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.arrows {
+    font-size: 8px;
+    color: #aaa;
+    line-height: 8px;
+    margin-top: 0px;
+}
+
+.hv-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: -3px;
+}
+
+.hv-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.hv-label {
+    color: #f2f2f2;
+    width: 12px;
+    text-align: right;
+}
+
+.single-label {
+    color: #f2f2f2;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.vercheck-box {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border: 1px solid #191919;
+    background: #545454;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.umcheck-box {
+    background: radial-gradient(circle, rgba(100, 100, 100, 1) 0%, rgba(69, 69, 69, 1) 100%);
+}
+
+.disabled {
+    color: #666;
+}
+
+.verinactive {
+    color: #8f8f83;
+    margin-left: 20px;
+    margin-top: 6px;
+    align-items: center;
+    display: flex;
+    gap: 1px;
+}
+
+.uminactive {
+    color: #ccc;
+    margin-left: 20px;
+    margin-bottom: -6px;
+    align-items: center;
+    display: flex;
+    gap: 1px;
+}
+
+.veractive img {
+    transform: scale(0.95);
+    outline: 2px dotted #dfdfdc;
+    padding: 1px;
+}
+
+.check {
+    position: relative;
+    top: -3px;
+}
+
+.ab {
+    margin: 0px 18px 0px 0px;
 }
 
 /* ============ Footer ============ */
