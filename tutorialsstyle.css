@@ -430,26 +430,6 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
   transform: rotate(-25deg);
 }
 
- /* Color Box For Text */
- .box {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-
-.textbox {
-  padding-top: 0px;
-}
- 
- .row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center
-}
-
 /* ============ Position x/y-Box ============ */
 .posibox {
     width: 80px;
