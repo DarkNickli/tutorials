@@ -754,6 +754,154 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     color: #929292;
 }
 
+/* ============ Free Rotate-Box ============ */
+.free-box {
+    width: 410px;
+    margin: 0 auto;
+    margin-top: -15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 2px 15px 5px 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #1a0c1ab8;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.freeline {
+    border-top: 1px solid #dcdcdc;
+    margin-top: 3px;
+    padding-top: 0px;
+}
+
+.freebox-series {
+    display: flex;
+    gap: 8px;
+}
+
+.freetop-title {
+    margin-top: 3px;
+    padding-top: 0px;
+    font-weight: bold;
+}
+
+.free-win {
+    position: relative;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    padding: 10px 10px 10px 10px;
+    line-height: 1.5;
+    margin-top: 20px;
+    width: 163px;
+}
+
+.free-win::before {
+    background-color: #f0f0f0;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1a0c1ab8;
+}
+
+.richtung {
+    width: 95px;
+}
+
+.richtung::before {
+    content: "Richtung";
+}
+
+.grad {
+    width: 255px;
+}
+
+.grad::before {
+    content: "Grad";
+}
+
+.radio-row {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #1a0c1ab8;
+}
+
+.active {
+    color: #0057c8;
+    font-weight: bold;
+}
+
+.grad-top {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.grad-bottom {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+}
+
+.input-box {
+    width: 55px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid #a0a0a0;
+    color: #1a0c1ab8;
+    padding-left: 4px;
+    line-height: 18px;
+}
+
+.spinner {
+    width: 10px;
+    height: 15px;
+    margin-left: -16px;
+    background: #ececec;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.range {
+    font-size: 11px;
+    color: #1a0c1ab8;
+    padding-left: 10px;
+}
+
+.free-box .freetop-titl {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.freecheck-box {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #626262;
+    background: #f3f3f3;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.option-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.option-row {
+    font-size: 13px;
+    color: #929292;
+}
+
 /* ============ Color Gradient-Box ============ */
 .panel {
     width: 150px;
