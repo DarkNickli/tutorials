@@ -457,6 +457,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     padding-top: 0px;
 }
 
+
 /* ============ Shadow, Selection & Mask-Box ============ */
 .shadow-box {
     width: 190px;
@@ -710,6 +711,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     margin-top: 3px;
     padding-top: 0px;
     font-weight: bold;
+    font-size: 13px;
 }
 
 .under {
