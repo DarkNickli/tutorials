@@ -532,7 +532,6 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     background-color: #f0f0f0;
     border-radius: 8px;
     padding: 2px 10px 5px 10px;
-    font-family: inherit;
     text-align: left;
     font-size: 14px;
     color: #1a0c1ab8;
@@ -595,7 +594,6 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     background-color: #f0f0f0;
     border-radius: 8px;
     padding: 2px 10px 10px 10px;
-    font-family: inherit;
     text-align: left;
     font-size: 14px;
     color: #1a0c1ab8;
