@@ -1070,6 +1070,16 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     border-top: 1px solid #d4af37;
 }
 
+.footer-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("https://i.postimg.cc/7PdM4LzM/Footerbanner.jpg") center/cover no-repeat;
+    background-size:100% auto;
+    opacity: 0.2; 
+    z-index: 0;
+}
+
 .footer-links{
     margin-top: 0px;
     text-align: left;
