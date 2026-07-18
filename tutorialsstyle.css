@@ -1059,6 +1059,8 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
 }
 
 .footer-box {
+    position: relative;
+    overflow: hidden;
     margin-top: 0px;
     padding-bottom: 12px;
     padding-left: 5px;
@@ -1069,7 +1071,6 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     border-radius:  0px 0px 8px 8px;
     border-top: 1px solid #d4af37;
 }
-
 .footer-box::before {
     content: "";
     position: absolute;
@@ -1099,4 +1100,11 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     color: #d4af37;
     text-shadow: 1px 1px 2px black;
     text-decoration: none;
+}
+
+.footer-links,
+.finish,
+.finish-meta {
+    position: relative;
+    z-index: 1;
 }
