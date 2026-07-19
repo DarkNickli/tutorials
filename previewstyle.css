@@ -165,7 +165,10 @@
 .pagination {
   display: flex;
   gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
+
 .pagination .page-number {
   font-weight: 800;
   font-size: 15px;
