@@ -321,6 +321,17 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 
+/* Contents */
+.code-con { 
+    border-radius: 5px; 
+    white-space: nowrap;
+    background-color:#1a0c1a82;
+    color: #e6e5e6;
+    padding: 2px 6px;
+    text-shadow: none;
+    font-size: 0.95em;
+  }
+
 /* ============ Color Box ============ */
 .colorbox {  
     display: flex;
