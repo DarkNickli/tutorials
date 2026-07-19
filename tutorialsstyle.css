@@ -331,6 +331,31 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     text-shadow: none;
     font-size: 0.95em;
   }
+  
+ /* ============ Tabelle  ============ */ 
+.cursor-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cursor-table th {
+    font-size: 17px;
+    padding: 12px;
+    height: 53px;
+    border-bottom: 1px solid #cfcfcf;
+    color: #7d6d7d;
+}
+
+.cursor-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(207,207,207,0.2);
+}
+
+.cursor-table tr:hover {
+    background: rgba(255,255,255,0.05);
+}
 
 /* ============ Color Box ============ */
 .colorbox {  
