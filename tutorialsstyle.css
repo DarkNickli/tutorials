@@ -1087,7 +1087,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     position: absolute;
     inset: 0;
     background: url("https://i.postimg.cc/7PdM4LzM/Footerbanner.jpg") center/100% auto no-repeat;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 0;
     pointer-events: none;
 }
