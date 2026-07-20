@@ -105,6 +105,7 @@
   margin-right: 0px;
   overflow: hidden;
   box-sizing: border-box;
+  border-bottom: 1px solid #D4AF37;
 }
 
 .image-slider img {
