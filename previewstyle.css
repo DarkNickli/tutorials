@@ -23,6 +23,10 @@
     --preview-height:230px;
 }
 
+.preview-container.restempfoto{
+    --preview-height: 570px;
+}
+
 .previewtuts img{
     width:32px;
     height:29px;
