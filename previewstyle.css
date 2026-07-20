@@ -188,9 +188,7 @@
   background:#7f6f7fa8;
   border: 1px solid rgba(212,175,55,0.6);
   backdrop-filter: blur(6px);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.08),
-    0 1px 4px rgba(0,0,0,.18);
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
   transition: all 0.25s ease;
   border-radius: 6px;
 }
