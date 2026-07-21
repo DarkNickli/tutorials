@@ -257,7 +257,7 @@
     display: inline-block;
     position: relative;
     font-weight: 600;
-    transform: scaleY(1.2);
+    transform: scaleY(1.1);
     transform-origin: left center;
     font-variant: small-caps;
 }
