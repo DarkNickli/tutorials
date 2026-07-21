@@ -304,8 +304,6 @@
   padding-bottom: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 .avatar-elegant-box .avatar {
@@ -315,7 +313,9 @@
   object-fit: cover;
   border: 1px solid #d4af37;
   box-shadow: 0 1px 2px rgba(26, 12, 26);
-  flex-shrink: 0;  padding: 0px;
+  flex-shrink: 0;
+  padding: 0px;
+  margin-bottom: 50px;
 }
 
 .avatar-elegant-box .text {
@@ -333,5 +333,11 @@
   margin: 0;
   line-height: 1.6;
   font-size: 1em;
-  color: #555;
+  color: #555; 
+  text-align: justify;
+  hyphens: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
