@@ -238,3 +238,26 @@
     letter-spacing: 1px;
     text-decoration: none;
 }
+
+/* ==========================================
+   Rule
+========================================== */
+.rule {
+    margin-top: 5px;
+}
+
+.ruleheadline {
+    display: inline-block;
+    position: relative;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.ruleheadline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #1a0c1a66;
+}
