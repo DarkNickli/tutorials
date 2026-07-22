@@ -341,13 +341,13 @@
   margin-bottom: 5px;
   margin-top: 15px;
 }
+
 /* ==========================================
    Welcome
-========================================== */  
-  
+========================================== */   
 .welcome {
-    margin: 25px;
-    padding: 18px 22px;
+    margin: 25px 25px 0;
+    padding: 18px 22px 0;
     text-align: left;
     line-height: 1.7;
 }
