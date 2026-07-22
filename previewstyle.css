@@ -341,3 +341,38 @@
   margin-bottom: 5px;
   margin-top: 15px;
 }
+/* ==========================================
+   Welcome
+========================================== */  
+  
+.welcome {
+    margin: 25px;
+    padding: 18px 22px;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.welcome p {
+    margin: 0 0 14px;
+}
+
+.welcome-list {
+    margin: 10px 0 18px 18px;
+    padding: 0;
+}
+
+.welcome-list li {
+    margin-bottom: 6px;
+}
+.blogname {
+    color: #7d6d7d;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgb(212, 175, 55);
+    font-weight: 600;
+}
+  
+.welsignature {
+    margin-top: 22px !important;
+    font-size: 13px;
+}
