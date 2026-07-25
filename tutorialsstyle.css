@@ -256,6 +256,27 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
   padding: 0 20px;
 }
 
+/* Hinweis für PSP 2023 */
+.psp-hinweis {
+    max-width: 840px;
+    margin: 25px auto;
+    padding: 20px;
+    font-size: 15px;
+    text-align: left;
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    border-radius: 8px;
+    color: #1a0c1ab8;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+
+    -webkit-box-shadow:
+        -15px 0px 5px -10px rgba(0,0,0,0.3),
+         15px 0px 5px -10px rgba(0,0,0,0.3);
+
+    box-shadow:
+        -15px 0px 5px -10px rgba(0,0,0,0.3),
+         15px 0px 5px -10px rgba(0,0,0,0.3);
+}
+
 /* ============ Heading for the step-by-step box ============ */
 .step-title {
     font-size: 18px;
