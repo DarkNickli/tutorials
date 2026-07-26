@@ -78,6 +78,33 @@ p {
     transition: all 0.3s ease;
 }
 
+/* ============ Preview for Ava & Sing ============ */
+
+.image-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.preview-main {
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.preview-avatar {
+    width: 150px;
+    height: auto;
+    border-radius: 6px;
+}
+#content .image-prev img {
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
 /* ============ Main Content Box ============ */
 #content {
     border: 1px solid #D4AF37;
