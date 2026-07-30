@@ -292,6 +292,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     font-size: 15px;
     text-align: left;
     border: 1px solid rgba(212, 175, 55, 0.45);
+	background: rgba(187, 174, 181, 0.42);
     border-radius: 8px;
     color: #1a0c1ab8;
     text-shadow: 0 1px 1px rgba(0,0,0,0.15);
