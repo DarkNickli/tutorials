@@ -414,6 +414,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     align-items: center;
     height: 40px;
     border-radius: 6px;
+	border: 1px solid #1a0c1a;
     padding: 5px;
     font-size: 14px;
     text-shadow: 1px 0px 1px #b9b9b9, 1px 1px 0px #000;
@@ -451,6 +452,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     border-radius: 6px;
     border: 1px solid #1a0c1a;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+	text-shadow: 1px 0px 1px #b9b9b9, 1px 1px 0px #000;
 }
 
 .TW2 {
@@ -463,8 +465,9 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
     text-align: center;
     color: #ffffff;
     border-radius: 6px;
-    border: 1px solid #1a0c1a;
+	border: 1px solid #1a0c1a;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+	text-shadow: 1px 0px 1px #b9b9b9, 1px 1px 0px #000;
 }
 
  /* Color Box For Text */
@@ -503,6 +506,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
   border-radius: 6px;
   border: 1px solid #1a0c1a;
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  text-shadow: 1px 0px 1px #b9b9b9, 1px 1px 0px #000;
 }
 
 .TW3::after {
