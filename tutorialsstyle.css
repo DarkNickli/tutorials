@@ -1172,6 +1172,24 @@ hr {
   margin: 30px 0 0 0;
 }
 
+.webpro-box {
+    position: relative;
+    background-color: #1a0c1a;
+    border: 2px solid #D4AF37;
+    border-bottom: 3px solid #1a0c1a;
+    border-radius: 8px;
+    box-shadow: 0px 3px 13px -4px rgba(0,0,0,1);
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+    line-height: 1.6;
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 35px 15px 15px;
+    background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
+}
+
 .webpro {
     position: absolute;
     top: -17px;
