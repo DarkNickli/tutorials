@@ -1,5 +1,4 @@
 
-<!-- SCRIPT: Kopier den Bereich -->
 function copyBereich(button) {
   const codeBlock = button.closest(".code-block").querySelector(".code");
   const text = codeBlock.innerText;
