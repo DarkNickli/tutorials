@@ -1146,7 +1146,7 @@ hr {
 
 /* ============ Erklärung ============ */
 
-.step-explanation {
+.webpro-explanation {
     margin-top: 20px;
     padding: 12px;
     background: rgba(176,172,176,0.20);
@@ -1168,7 +1168,7 @@ hr {
     letter-spacing: 1px;
     padding-bottom: 5px;
 }
-.step-explanation .code-container {
+.webpro-explanation .code-container {
   margin: 30px 0 0 0;
 }
 
@@ -1209,6 +1209,16 @@ hr {
     text-shadow: 0 1px 2px rgba(255,255,255,0.6);
 }
 
+.webpro-subtitle1 {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    color: #1a0c1ac2;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
 .subtitle {
   font-size: 15px;
   text-align: center;
@@ -1230,6 +1240,10 @@ hr {
 
     background: linear-gradient(to right,transparent,rgba(212,175,55,0.9),transparent);
     box-shadow: 0 0 8px rgba(212,175,55,0.6);
+}
+
+.describe {
+    padding-left: 50px;
 }
 
 /* ============ Codebox ============ */
