@@ -1208,12 +1208,13 @@ hr {
 
 /* Contents */
 .code-con { 
-    border-radius: 5px; 
+    border-radius: 4px; 
     white-space: nowrap;
     background-color:#1a0c1a82;
     color: #e6e5e6;
     text-shadow: none;
     font-size: 0.95em;
+	padding: 0px 3px;
   }
   
  /* ============ Tabelle  ============ */ 
