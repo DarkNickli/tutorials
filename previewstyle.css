@@ -66,8 +66,8 @@
     color: #f5f5f5f5;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
     font-variant:small-caps;
+    font-size: 15px;
     letter-spacing:1px;
-}
 
 .previewtuts-details{
     padding:12px;
