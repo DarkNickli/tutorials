@@ -68,6 +68,7 @@
     font-variant:small-caps;
     font-size: 15px;
     letter-spacing:1px;
+}
 
 .previewtuts-details{
     padding:12px;
@@ -121,7 +122,6 @@
   display: none;
   margin: 0;
   padding: 0;
-  
 }
 
 .image-slider img.active {
@@ -366,6 +366,7 @@
 .welcome-list li {
     margin-bottom: 6px;
 }
+
 .blogname {
     color: #7d6d7d;
     transition: all 0.3s ease;
