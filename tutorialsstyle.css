@@ -1382,6 +1382,72 @@ hr {
     box-shadow: 0 0 8px rgba(212,175,55,0.6);
 }
 
+/* ============ Info-Boxen ============ */
+.instru-box {
+    position: relative;
+    background-color: #1a0c1a;
+    border: 2px solid #D4AF37;
+    border-bottom: 3px solid #1a0c1a;
+    border-radius: 8px;
+    box-shadow: 0px 3px 13px -4px rgba(0,0,0,1);
+    padding: 18px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+    line-height: 1.6;
+    width: 65%;
+    max-width: 1000px;
+    margin: 50px auto 20px auto;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),
+        url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
+}
+.instru-box::before {
+    content: "Instruktionen";
+    position: absolute;
+    top: -17px;
+    left: 10px;
+    padding: 5px 20px;
+    background: rgba(176,172,176,0.65);
+    backdrop-filter: blur(4px);
+    color: #1a0c1a;
+    border: 1px solid #D4AF37;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+/* Bilder in der Infobox */
+.instru-box img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    margin: 10px 0;
+}
+
+/*Info Title */
+h1.instru {
+    font-weight: bold;
+    text-align: right;
+    transform: scaleY(1.2);
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    color: #b8941f;
+    text-shadow: 1px 1px 2px #1c0e1cc9;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 7px 0 0 0;
+    background:linear-gradient(to bottom, rgba(176,172,176,0.95) 0%, rgba(176,172,176,0.95) 30%, rgba(176,172,176,0.5) 60%, rgba(176,172,176,0) 90%);
+    backdrop-filter: blur(4px);
+    position: relative;
+    z-index: 999;
+}
 
 /* ============ Footer ============ */
 .finish {
