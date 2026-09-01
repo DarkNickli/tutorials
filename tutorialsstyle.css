@@ -366,8 +366,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
 }
   
 .highlight {
-    color: #b8941f;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    text-shadow: 0 0 5px rgb(201, 166, 64);
 }
 
 /* ============ Color Box ============ */
