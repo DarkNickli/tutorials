@@ -231,7 +231,7 @@ p {
 
 /* ============ Info, Filter & Download Box ============ */
  .infofont {
-	color: #7d6d7d;
+	color: #8a7222;
     text-shadow: 0 0 5px rgb(212, 175, 55);
 }
 
@@ -368,6 +368,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
 .highlight {
     text-shadow: 0 0 5px rgb(212, 175, 55);
 	font-style: italic;
+	color: #8a7222;
 }
 
 /* ============ Color Box ============ */
