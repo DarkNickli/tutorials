@@ -367,6 +367,7 @@ p.dow {margin-top: 0px; margin-bottom: 5px;}
   
 .highlight {
     text-shadow: 0 0 5px rgb(201, 166, 64);
+	font-style: italic;
 }
 
 /* ============ Color Box ============ */
