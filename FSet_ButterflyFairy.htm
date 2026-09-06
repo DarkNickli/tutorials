@@ -1,713 +1,315 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>»DarkNickli`s Tutorials«</title>
-<style type="text/css">
-        body {
-            font-family: "Lucida Sans",Verdana;
-            font-size: 14px;
-            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibCu-cb9WHNb1RvkgECHQ1XJZPy-HzWalYR9HNPC5KH73KFXJjfgarGtbBl2y8Qx33MhdYdvoD9CBphFbri30s1NG4pr59mNFnhdmKpasakJ_pv8UirnYAEj8zQY0_a4Qxld3X3uKYp0VyEh3fUYtt4TG8PxfBzww1RL380g0VqOKquM5GTrg7MKjWlt4/s1600/BG2.png');
-            background-color: #1a0c1a;color: #1a0c1a;
-            color: #7d6d7d;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .highlight {background-color:#D4AF37;}
-        
-        #container {
-           width: 1300px;
-           height: auto;
-           margin-bottom: 20px;
-           margin-left: auto;
-           margin-right: auto;
-           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibCu-cb9WHNb1RvkgECHQ1XJZPy-HzWalYR9HNPC5KH73KFXJjfgarGtbBl2y8Qx33MhdYdvoD9CBphFbri30s1NG4pr59mNFnhdmKpasakJ_pv8UirnYAEj8zQY0_a4Qxld3X3uKYp0VyEh3fUYtt4TG8PxfBzww1RL380g0VqOKquM5GTrg7MKjWlt4/s1600/BG2.png');
-           margin-top: 20px;
-           padding-bottom: 0px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   
-       #banner {position: relative;
-            width: 1200px;
-            height: 400px;
-            background-size: cover;
-            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyFn3w-zfQB5Ocln4kYJdNHGtXWFKL17qlVQEmhVqFXH_egXfyEgZB9vNHoqIHTB9yUEWTgfOLdURBJfb5z6gmV8_wWT03tKUbRAXKfahXziMWuQUwX0cHqZHJ_JEVOZFZDtl0TqRmcf5A_G3IXygvgA7SFB-R67hzYl4tTS5ZjfJuWKipppxy0YTBFlg/s1600/BannerDN.jpg');
-            background-position: center;
-            text-align: center;
-            border: none;
-  
-            
-       }
-       
+    <title>DarkNickli's Tutorials</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-/* Navigation Menu */
-        .submenu {font-family: Tahoma, Geneva, sans-serif;
-	        font-weight: bold;
-            text-transform: capitalize;
-	        letter-spacing: 1px;
-	        text-align: left; 
-            background-color: #b0acb0;
-            border: 1px solid #D4AF37;
-            padding: 10px;
-            text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
-            color: #1a0c1a;
-            -webkit-border-radius: 4px 4px 4px 4px;
-            -moz-border-radius: 4px 4px 4px 4px;
-            border-radius: 4px 4px 4px 4px;        
-        }
-
-        .submenu a {
-            margin: 0 15px;
-            font-size: 1.2em;
-            color: #1a0c1a;
-            font-weight: 500;
-            text-decoration: none;
-        }
-
-        .submenu a:hover {
-            color: #7d6d7d;         
-        }
-
-#dropdown2 {background-color: #b0acb0;
-
-  position: relative;
-  border: 1px solid #D4AF37;
-  color: #1a0c1a;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 6px;
-  margin-left: -17px; 
-  margin-right: -20px; 
-  width: calc(100% + 38px); 
-  margin-bottom: -10px;
-  -webkit-box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
-  -moz-box-shadow: 0px 0px 0px 3px rgba(26,12,26,1);
-  box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
-    }
-  
-
-        #inhalt {
-            background-size: cover;
-            background-position: center;
-            color: #f9f8f9;
-            text-align: center;
-            padding-top: 8px;
-            padding-right: 8px;
-            padding-bottom: 8px;
-            padding-left: 8px;
-            border: 1px solid #D4AF37;
-            background-color: #7d6d7d;
-            -webkit-border-radius: 8px 8px 8px 8px;
-            -moz-border-radius: 8px 8px 8px 8px;
-            border-radius: 8px 8px 8px 8px;
-        }
-        #inhalt-inner {
-            background-size: cover;
-            background-position: center;
-            color: #f9f8f9;
-            text-align: center;
-            padding: 10px 10px;
-        }
-
-        h1 {
-           font-size: 35px;
-           font-weight: bold;
-           letter-spacing: 4px; 
-           height: 18px;
-           color: #ededed; 
-           text-transform:uppercase;
-           text-shadow: 5px 5px 5px #292727;
-        }
-        
-        
-        h2, h3, h4 {font-family: Tahoma, Geneva, sans-serif;
-           font-size: 20px;
-           font-style: normal;
-           font-variant: small-caps;
-           text-transform: capitalize;
-           letter-spacing: 4px;
-           height: 18px;
-           color: #1a0c1a; 
-           text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;   
-        }
-        
-        h3 {margin: -5px 0 15px;
-        }
-        
-        h4 {margin: 0px 0 15px;
-        }
-        
-        h5 {font-family: "Lucida Sans",Verdana; 
-        margin: 0px 0 15px;
-        font-size: 18px;
-        text-align: center;
-        font-weight: bold;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
-        color: #1a0c1a;
-        }
-
-
-        h5 a {
-            color: #1a0c1a;
-            text-decoration: none;
-        }
-
-        h5 a:hover {
-            color: #7d6d7d;
-        }
-
-.preview {
-           box-shadow: #292727 0px 0.0625em 0.0625em, #292727 0px 0.125em 0.5em, #292727 0px 0px 0px 1px inset;
-        }
-        
-         #protab {margin-left: auto;
-           margin-right: auto;
-        }
-        
-         #program{text-transform:uppercase;
-           font-family:Verdana,Verdana;
-           letter-spacing: 1px; 
-           font-size: 13px;
-           text-shadow: 0px 0px 3px #fff, 1px 1px 0px #fff;
-           width: auto;
-           height: 20px;
-           background-color: #b0acb0;
-           border: 1px solid #D4AF37;
-           color: #1a0c1a;
-           text-align: center;
-           line-height: 20px;
-           padding: 5px 20px;
-           webkit-border-radius: 5px 5px 5px 5px;
-           -moz-border-radius: 5px 5px 5px 5px;
-           border-radius: 5px 5px 5px 5px;
-           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-
-         }
-         
-         hr {
-           width: 25%;            
-           border: 0;             
-           border-top: 1px solid #1a0c1a;
-           margin-top: 2px;
-           margin-bottom:5px;
-           } 
-         
-         
-         #info1 { 
-           position: relative;
-           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
-           padding: 20px 20px 20px;
-           background-color: #f0f0f0;
-           text-align: center;
-           vertical-align: middle;
-           border-left: 1px solid #D4AF37;
-           border-bottom: 5px solid #1a0c1a;
-           border-right: 1px solid #D4AF37;
-           border-top: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -webkit-border-radius: 8px 8px 8px 8px;
-           -moz-border-radius: 8px 8px 8px 8px;
-           border-radius: 8px 8px 8px 8px;
-        }
-        
-
-        #info1::before {
-           content: 'Information';
-           font-size: 15px;
-           font-weight: bold;
-           position: absolute;
-           top: -10px;
-           left: -25px;
-           width: auto;
-           height: 20px;
-           background-color: #1a0c1a;
-           border: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           color: #f0f0f0;
-           text-align: center;
-           line-height: 20px;
-           padding: 5px 20px;
-           -webkit-border-radius: 5px 5px 5px 5px;
-           -moz-border-radius: 5px 5px 5px 5px;
-           border-radius: 5px 5px 5px 5px;
-
-        }
-
-        #info2 {  
-           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
-           position: relative;
-           padding: 55px 20px 20px;
-           min-padding: 55px 20px 20px;
-           background-color: #f0f0f0;
-           text-align: center;
-           vertical-align: middle;
-           border-left: 1px solid #D4AF37;
-           border-bottom: 5px solid #1a0c1a;
-           border-right: 1px solid #D4AF37;
-           border-top: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -webkit-border-radius: 8px 8px 8px 8px;
-           -moz-border-radius: 8px 8px 8px 8px;
-           border-radius: 8px 8px 8px 8px;
-           counter-increment: step; 
-        }
-
-
-/* Dekorationselement in der Zelle */
-        #info2::before {
-           content: 'Schritt ' counter(step); 
-           font-size: 15px;
-           font-weight: bold;
-           position: absolute;
-           top: 15px;
-           left: -5px;
-           width: 739px;
-           padding: 5px 20px;
-           background-color: #1a0c1a;
-           border: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           color: #f0f0f0;
-           -webkit-border-radius: 5px 5px 5px 5px;
-           -moz-border-radius: 5px 5px 5px 5px;
-           border-radius: 5px 5px 5px 5px;
-        }
-
-
-        #info3 {
-           position: relative;
-           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
-           padding: 20px;
-           background-color: #f0f0f0;
-           text-align: center;
-           vertical-align: middle;
-           border-left: 1px solid #D4AF37;
-           border-bottom: 5px solid #1a0c1a;
-           border-right: 1px solid #D4AF37;
-           border-top: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -webkit-border-radius: 8px 8px 8px 8px;
-           -moz-border-radius: 8px 8px 8px 8px;
-           border-radius: 8px 8px 8px 8px;
-        }
-
-
-        #info3::before {
-           content: 'Zubehör und Material';
-           font-size: 15px;
-           font-weight: bold;
-           position: absolute;
-           top: -10px;
-           left: -25px;
-           width: auto;
-           height: 20px;
-           background-color: #1a0c1a;
-           border: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           color: #f0f0f0;
-           text-align: center;
-           line-height: 20px;
-           padding: 5px 20px;
-           -webkit-border-radius: 5px 5px 5px 5px;
-           -moz-border-radius: 5px 5px 5px 5px;
-           border-radius: 5px 5px 5px 5px;
-        }
-
-        #info4 {
-           position: relative;
-           background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlHZ7adiClyTLXj58WkSzhiQfW_FMugoOyc44PB3p7U8SiPsDGfZOpB3wDosSABKrGSSnJuchlHKOagk7rwdM0MXa4c-5Voy_sZUC9p4UHq4tPtiF9O1wfWEq8agRMkniwwmt1cNGJEFFc-P8pMylWwrwDUQQbpq6swcXlTiswJTAbDwjm6sI6Takt3o/s1600/BG1.png');
-           padding: 20px;
-           background-color: #f0f0f0;
-           text-align: center;
-           vertical-align: middle;
-           border-left: 1px solid #D4AF37;
-           border-bottom: 5px solid #1a0c1a;
-           border-right: 1px solid #D4AF37;
-           border-top: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-           -webkit-border-radius: 8px 8px 8px 8px;
-           -moz-border-radius: 8px 8px 8px 8px;
-           border-radius: 8px 8px 8px 8px;
-        }
-
-
-        #info4::before {
-           content: 'Filter und Instruktionen';
-           font-size: 15px;
-           font-weight: bold;
-           position: absolute;
-           top: -10px;
-           left: -25px;
-           width: auto;
-           height: 20px;
-           background-color: #1a0c1a;
-           border: 1px solid #D4AF37;
-           -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-           color: #f0f0f0;
-           text-align: center;
-           line-height: 20px;
-           padding: 5px 20px;
-           -webkit-border-radius: 5px 5px 5px 5px;
-           -moz-border-radius: 5px 5px 5px 5px;
-           border-radius: 5px 5px 5px 5px;
-        }
-
-.content1, .content2  {color: #1a0c1a;
-           font-family:Verdana,Verdana, Verdana;
-           letter-spacing: 0px;
-           font-size: 14px;
-           font-weight: bold;
-           line-height: 21px;
-           text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
-           line-height: 20px;
-           text-align: center;
-           padding-top: 0px;
-           padding-bottom: 0px;
-           padding-right: 0px;
-           padding-left: 0px;
-           
-        }
-        
- /* Vorwort */    
-        
-.content2  {padding-top: 5px;
-           padding-bottom: 0px;
-           padding-right: 0px;
-           padding-left: 0px;
-           letter-spacing: 0px;
-        }
-.note    {text-decoration: none;
-           letter-spacing: 0px;
-           text-transform: capitalize;
-           font-variant: small-caps;
-        }
-
-.mat{font-family: "Lucida Sans",Verdana;   font-size: 18px; ;
-        }
-        
-/* Farbbox */
-.colorbox {width: 80px;
-           text-align: center;
-           text-shadow: 1px 0px 1px #b9b9b9, 1px 1px 0px #000;
-           height: 40px; 
-           font-family: "Lucida Sans",Verdana;
-           font-size: 13px;
-           border: 1px solid #1a0c1a;
-           margin-top: 10px;
-           margin-bottom: 10px;
-           justify-content: center;
-           align-items: center;
-	   border-radius: 18px 5px 18px 5px;
-           } 
-            
-.color {justify-content: center;
-           display: flex;
-           gap: 5px;
-           flex-wrap: wrap;
-           }
-</style>
-
+    <link rel="stylesheet" href="https://darknickli.github.io/tutorials/tutorialsstyle.css">
 </head>
+
 
 <body>
 <div id="container">
-<table  align="center" id="inhalt">
-	<tr>
-		<td id="banner">
-		</td>
-	</tr>
-	<tr>
-            <td>
-<div>
-                  <table id="dropdown2">
-                     <tr class="submenu">
-                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/forenset.html" target="_blank;"><strong>Forenset Tutorials</strong></a>&lt;</td>
-                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
-                     </tr>
-                  </table>
-               </div>
-            </td>
-		        </tr>
-		        <tr>
-		        <td id="inhalt-inner" cellspacing="0" cellpadding="2" ><h1>Butterfly Fairy</h1>
-				<br />
-				<br />
-   		<img alt="" height="250" src="https://i.postimg.cc/fL9B8Vxq/DN-BFSing-00.jpg" width="650">
-				<br />
-				<br />
-				<br />
+
+<div class="banner-container">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyFn3w-zfQB5Ocln4kYJdNHGtXWFKL17qlVQEmhVqFXH_egXfyEgZB9vNHoqIHTB9yUEWTgfOLdURBJfb5z6gmV8_wWT03tKUbRAXKfahXziMWuQUwX0cHqZHJ_JEVOZFZDtl0TqRmcf5A_G3IXygvgA7SFB-R67hzYl4tTS5ZjfJuWKipppxy0YTBFlg/s1600/BannerDN.jpg" alt="Banner" class="banner-img">
+    <nav class="banner-nav">
+        <a href="https://phantasygraphics.blogspot.com/p/forenset.html" target="_blank">Back Tutorials</a>
+        <a href="https://phantasygraphics.blogspot.com/" target="_blank">Home</a>
+    </nav>
+</div>
+
+    <div id="content">
+        <h1>Butterfly Fairy</h1>
+
+
+<div class="image-prev">
+  <img src="https://i.postimg.cc/tRZr4fz8/DN-FSet-BFairy-Ava-00.jpg" alt="">
+  <img src="https://i.postimg.cc/dQkWVX9z/DN-FSet-BFSing-00.jpg" alt="">
+</div>  
+
+        <!-- Info Box -->
+    <div class="info-box" style="margin-top: 65px; color: #f0f0f0;">
+        <p class="infofont">Erstellt mit PaintShop Pro 2023, lässt sich jedoch auch mit anderen Versionen nacharbeiten.</p>
+        <p class="infofont">Das Tutorial und das verwendete Material unterliegen meinem Copyright.</p>
+        <p class="infofont">Vielen Dank, dass Ihr meine Arbeit respektiert.</p>
+    </div>
+
+        <!-- Material -->
+    <div class="info-box fancy-title">
+        <span>Dateien &amp; Materialien</span>
+				<p class="headline">Datei</p>
+				<p class="dow">Tube Deiner Wahl</p><br>
+
+    <div class="download-box">
+        <p class="headline">Download</p>
+        <p class="dow">
+        <a href="https://www.mediafire.com/file/kltx0sowkid5akd/DN_FSetBFairy.zip/file" target="_blank">&bull; FSetBFairy</a></p>
+
+    </div>
+</div>
+
+
+        <!-- Filter -->
+    <div class="info-box fancy-title"><span>Filter &amp; Vorbereitung</span>
+				<p class="headline">Filter</p>
+        <p class="dow">KEINEN </p><br>
+				<p class="headline">Vorbereitung</p>
+				<p class="text-block">
+				<u>Speichere den Brush in Deinem Pinsel-Ordner:</u><br>
+				Datei › Importieren › Spezialpinsel<br>
+				Klicke auf <em class="highlight">Öffnen</em>, wähle den Brush aus und bestätige erneut mit <em class="highlight">Öffnen</em>.<br>
+				Der Brush erscheint nun im linken Feld.<br>
+				Klicke auf <em class="highlight">Alle hinzufügen »</em> und bestätige mit <em class="highlight">Okay</em>.</p>
+</div><br>
+
+<div class="psp-hinweis">
+				<p class="text-block">
+				<u><b>Hinweis für PSP 2023:</b></u><br>
+				Dieses Tutorial wurde für <b>PaintShop Pro 2023</b> angepasst.<br>
+                Einige Bezeichnungen und Funktionen können sich von älteren PSP-Versionen unterscheiden.<br><br>
+                <u><b>1. Spiegeln:</b></u><br>
+                Die Bezeichnungen der <b>Spiegel-Funktionen</b> können sich geändert haben.<br>
+                Verwende den Befehl, der zum gewünschten Ergebnis bzw. zum Vorschaubild passt.<br><br>
+                <u><b>2. Mischmodi:</b></u><br>
+                Einige ältere Bezeichnungen wurden angepasst.<br>
+                Zum Beispiel kann der frühere Mischmodus <b>Helligkeit (L)</b> in PSP 2023 als <b>Luminanz (V)</b> bezeichnet sein.<br>
+                Der frühere Mischmodus <b>Überbelichten</b> heißt in PSP 2023 <b>Aufhellen</b> und ist in der Liste der Mischmodi ganz unten zu finden.
+                </p>
+</div><br>
+
+        <!-- Step by Step -->
+<div class="step-container">
+<div class="step-box">
+             <p class="steptut-titel">Signatur</p>
+             <hr>
+                <p>Öffne <span class="highlight">Deine Tube</span> in PSP.<br> 
+                Wähle daraus eine dunkle Hintergrundfarbe.</p>
+                
+<!-- Color Bereich  -->
+<div class="color">
+  <div class="colorbox" style="background-color: #ffffff; color: #cececc;">VG<br/>#ffffff</div>
+  <div class="colorbox" style="background-color: #0a1402; color: #ffffff;">HG<br/>#0a1402</div>
+</div>
+
+                
+                <p>Öffne im Material-Ordner die Textur <span class="highlight">DN_Texture00</span>.</p>
+                <p>Bearbeiten › Kopieren.</p>
+                <p>Öffne im Material-Ordner den Hintergrund <span class="highlight">DN_BFBackground</span>.</p>
+                <p>Bearbeiten › Als neue Ebene einfügen.</p>
 				
-			    <table id="protab" align="center">
-			    <tr>
-				<td id="program"><strong>-Optimiert für-</strong></td>
-				</tr>
-				<tr>
-				<td>&nbsp;</td>
-			    </tr>
-		        </table>
-			    <br />
-				<br />
-<!-- Info -->
-				<table class="corner"width="770" border="0" cellspacing="0" cellpadding="2" id="info1" align="center" valign="top">
-				<tr>
-				<td class="content2">Dieses Tutorial wurde mit PaintShop Pro X2 erstellt, lässt sich jedoch auch<br/>
-				problemlos mit anderen Versionen von PSP nachbasteln.<br />
-				<br />
-				Das Urheberrecht (Copyright) an diesem Tutorial sowie an der Tube und <br />
-				ein Teil des Material liegt ausschließlich bei mir.<br /><br />
-				Die Textur50 ist von Chibi Graphics (Website ist geschlossen).<br />
-				<em class="note">Vielen lieben Dank, dass ich die Textur nutzen darf.</em>
-				</td>
-				</tr>
-				</table>
-				<br />
-				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info3" align="center" valign="top">
-				<tr>
-				<td class="content2"><h3>-Benötigt-</h3>
-	            Tube Deiner Wahl<br /><br />
-	            <sub class="mat">Material</sub><hr />
-	            <h5><a href="https://www.mediafire.com/file/mpgudak3zelcz1r/DN_ButterflyFairy.zip/file" target="_blank" ><strong>&gt;Download&lt;</strong></a></h5>
-                </td>
-				</tr>
-				</table>
-				<br />
-				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info4" align="center" valign="top">
-				<tr>
-				<td class="content2"><h3>-Filter-</h3>
-				Keinen<br /><br /><br />
-				<h3>-Instruktionen-</h3>
-				Speichere den Brush in deinem Pinsel-Ordner und zwar so:<br />
-				Datei – Importieren – Spezialpinsel.<br />
-				Klicke auf 'Öffnen', wähle den Brush aus und bestätige mit 'Öffnen'.<br />
-				Der Brush ist jetzt im linken Feld. Klicke auf 'Alle hinzufügen &raquo;' und<br />
-				anschließend auf 'Okay'. Das war’s!<br />
-				Nun befindet sich der Brush in deinem Pinsel-Ordner.<br />
-				
-				</td>
-				</tr>
-				</table>
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
+                <p>Bild › Größe ändern › Prozentsatz: 80%.<br>
+                <span class="highlight"><u>Deaktiviere</u></span> die Option <span class="highlight">Größe aller Ebenen anpassen</span>.</p>
+                <small class="inst">Verschiebe die Textur so, wie es Dir am besten gefällt.</small></p>              
+                <p>Stelle den Mischmodus auf Weiches Licht und die Deckkraft auf 65%.</p>
 
-<!-- Sep by Sep -->
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1"><h4>-Signatur-</h4>Öffne Deine Tube und wähle eine Hintergrundfarbe aus.<br />
-  <div class="color">
-  <div class="colorbox" style="background-color: #2a190d; color: #f0f0f0;">HGF<br/>#2a190d</div>
-  </div>
-    Öffene die Datei <mark class="highlight">BFTextur</mark>.<br /><br />
-	Kopiere die Textur <mark class="highlight">50</mark>.<br />
-	Einfügen als neue Ebene.<br />
-	<em class="note">Schiebe die Textur so, wie es Dir am besten gefällt.</em><br />
-	Stelle den Mischmodus auf Weiches Licht und die Deckfähigkeit auf 50%.<br />
-    </td>
-	</tr>
-	</table>
-		
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Kopiere <mark class="highlight">DN_Texture49</mark>.<br />
-	Einfügen als neue Ebene.<br />
-	Verschiebe die Textur, siehe Screen.<br />
-	<img alt="" height="241" src="https://i.postimg.cc/0yVWjRkn/DN-BFairy-01.jpg" width="538"><br />
-	<br />
-	Stelle den Mischmodus auf Überzug und die Deckfähigkeit auf 45%.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Kopiere <mark class="highlight">DN_Texture29</mark>.<br />
-	Einfügen als neue Ebene.<br />
-	Stelle den Mischmodus auf Weiches Licht und die Deckfähigkeit auf 50%.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Kopiere <mark class="highlight">DN_BFFlower</mark>.<br />
-	Einfügen als neue Ebene.<br />
-	Verschiebe die Blume etwas nach oben.<br />
-	Stelle den Mischmodus auf Weiches Licht.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Öffne die Maske <mark class="highlight">DN_BFMaske</mark>.<br /><br />
-	Aktiviere das vorherige Bild wieder.<br />
-	Ebenen - Neue Rasterebene.<br />
-	Fülle die Ebene mit Weiß.<br /><br />
-	Ebenen - Neue Maskenebene - Aus Bild...	<br />
-	Wähle die Maske <mark class="highlight">DN_BFMaske</mark>.<br />
-	Helligkeit der Quelle: - Haken rein<br />
-	Maske umkehren: - KEIN Haken rein<br /><br />
-	Ebenen - Einbinden - Gruppe zusammenfassen.<br />
-	Stelle den Mischmodus auf Weiches Licht.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Ebenen - Neue Rasterebene.<br /><br />
-	Aktiviere den Standardpinsel.<br />
-	Wähle den Pinsel <mark class="highlight">DN_Brushe112</mark><br />
-	Füge Dein Wasserzeichen und die Copyright-Infos ins Bild ein.<br />
-	Stelle den Mischmodus auf Weiches Licht.<br />
-	<br />
-	Ebenen - Duplizieren.<br />
-	Bild - Vertikal Spiegeln.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Kopiere <mark class="highlight">Deine Tube</mark>.<br />
-	Einfügen als neue Ebene.<br />
-	Wenn nötig verkleiner die Tube.<br />
-	Platziere die Tube in der Mitte des Bildes.<br />
-	Stelle den Mischmodus auf Multiplikation und die Deckfähigkeit auf 55%.<br />
-	<br />
-	Ebenen - Duplizieren.<br />
-	Stelle den Mischmodus auf Farbe (L).<br />
-	Aktiviere das Freihandauswahlwerkzeug!<br />
-	Randschärfe: 25 / Glätten: 0<br />
-	Umkreise ein Teil Deiner Tube.<br />
-	<img alt="" height="241" src="https://i.postimg.cc/HLjS7Zjg/DN-BFairy-02.jpg" width="417"><br />
-	<br />
-	Auswahl - In Ebene umwandeln.<br />
-	Auswahl - Auswahl aufheben.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Ebenen - Neue Rasterebene.<br /><br />
-	Aktiviere den Standardpinsel!<br />
-	Wähle den Pinsel <mark class="highlight">DN_BFBrushe</mark>.<br />
-	Platziere den Pinsel mit der Hintergrundfarbe mittig in Dein Bild.<br />
-	Stelle den Mischmodus auf Helligkeit (L).<br />
-	Ebenen - Einbinden - Sichtbar zusammenfassen.<br /><br />
-	Bearbeiten - Kopieren.<br />
-	Bearbeiten - Als neues Bild einfügen und Minimiere es.<br />
-	Aktiviere das vorherige Bild wieder.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">Ebenen - Neue Rasterebene.<br /><br />
-	Fülle die Ebene mit der Hintergrundfarbe.<br />
-	Auswahl - Alles auswählen.<br />
-	Auswahl - Ändern - Verkleinern - 2pixel.<br />
-	Fülle die Ebene mit Weiß.<br />
-	Auswahl - Ändern - Verkleinern - 4pixel.<br />
-	Bearbeiten - Ausschneiden.<br />
-	Auswahl - Auswahl aufheben.<br />
-	Stelle den Mischmodus auf Helligkeit (L).<br />
-	<br />
-	Setze Dein Wasserzeichen und die Copyright Infos auf Bild.<br />
-	Ebenen - Einbinden - Alles zusammenfassen.<br />
-	Speicher es als JPG ab.<br />
-    </td>
-	</tr>
-	</table>
-	
-	<br />
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1"><h4>-Avatare-</h4>	<em class="note">Wir basteln einen Avatar für unsere Signatur.</em><br /><br />
-	Wechsle zum minimierten Bild.<br />
-	Aktivier das Auswahlwerkzeug - Rechteck.<br />
-	Randschärfe: 0<br />
-	Ziehe nun eine Auswahl um den Bildteil, den du gerne nutzen möchtest.<br />
-	<img alt="" height="241" src="https://i.postimg.cc/VNTK9qbb/DN-BFairy-03.jpg" width="460"><br />
-	Bearbeiten - Kopieren.<br /><br />
-	Öffne ein neues Bild 150 x 150 Pixel - Transparent.<br />
-	Bearbeiten - Als neue Ebene einfügen.<br />
-	Bild - Größe ändern - 80%<br />
-	Bild - Vertikal Spiegeln.<br />
-	Schiebe das Bild nach Bedarf zurecht.<br /><br />
-	Wiederhole <mark class="highlight">Schritt 9</mark>.<br />	
-    Speicher es als JPG ab.<br />
-	Fertig ist auch Dein Avatare.<br />
-	<img alt="" height="150" src="https://i.postimg.cc/y81p7YHW/DN-BFairy-Ava-00.jpg" width="150"><br />
-	</td>
-	</tr>
-	</table>
+            </div>
 
-	<p style="color: #1a0c1a; text-shadow: 1px 1px 0 #f0f0f0, 1px -1px 0 #f0f0f0, -1px 1px 0 #f0f0f0, -1px -1px 0 #f0f0f0, 1px 0px 0 #f0f0f0, 0px 1px 0 #f0f0f0, -1px 0px 0 #f0f0f0, 0px -1px 0 #f0f0f0;">
-				Schön, dass Du dabei warst!<br/>
-				Ich hoffe, das Basteln hat Dir genauso viel Freude bereitet wie mir das Erstellen dieses Tutorials. &#128522;<br/>
-                Verfasst am 28.Juni 2008</p> 
-<!-- Sep End -->													
-</td>	<tr>
-		<td>               <div>
-                  <table id="dropdown2">
-                     <tr class="submenu">
-                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/forenset.html" target="_blank;"><strong>Forenset Tutorials</strong></a>&lt;</td>
-                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
-                     </tr>
-                  </table>
-               </div>
-</td>
-	</tr>
-		<tr>
-		<td>&nbsp;</td>
-	</tr>
+<div class="step-box">
+                <p>Öffne aus dem Material-Ordner die Textur <span class="highlight">DN_Texture49</span>.</p>
+                <p>Bearbeiten › Kopieren.</p>
+                <p>Wechsle zu <span class="highlight">DN_BFBackground</span>.</p>
+                <p>Bearbeiten › Als neue Ebene einfügen.</p>
+                <p>Verschiebe die Textur entsprechend dem Vorschaubild.<br>
+                <img alt="" height="241" src="https://i.postimg.cc/4dNxgYMg/DN-FSet-BFairy-01.jpg" width="538"></p>
+                <p>Stelle den Mischmodus auf Überzug und die Deckkraft auf 45%.</p>
 
+</div>
 
+<div class="step-box">
+                <p>Öffne aus dem Material-Ordner die Textur <span class="highlight">DN_Texture29</span>.</p>
+                <p>Bearbeiten › Kopieren.</p>
+                <p>Wechsle zu <span class="highlight">DN_BFBackground</span>.</p>
+                <p>Bearbeiten › Als neue Ebene einfügen.</p>
+                <p>Stelle den Mischmodus auf Weiches Licht und die Deckkraft auf 50%.</p>
 
+</div>
 
+<div class="step-box">
+                <p>Öffne aus dem Material-Ordner die Datei <span class="highlight">DN_BFFlower</span>.</p>
+                <p>Bearbeiten › Kopieren.</p>
+                <p>Wechsle zu <span class="highlight">DN_BFBackground</span>.</p>
+                <p>Bearbeiten › Als neue Ebene einfügen.</p>
+                <p>Verschiebe die Blume etwas nach oben.</p>
+                <p>Stelle den Mischmodus auf Weiches Licht.</p>
 
+</div>
 
+<div class="step-box">
+                <p>Ebenen › Neue Rasterebene.</p>
+                <p>Fülle die Ebene mit Weiß.</p>
+                <p>Öffne die Maske <span class="highlight">DN_BFMaske</span> aus dem Material-Ordner und minimiere die Maske.<br>
+                Ebenen › Neue Maskenebene › Aus Bild …</p>
 
-</table>
-  </div>
+    <!-- Mask Bereich -->
+    <div class="mask-box">
+        <div class="top-title">
+            Maske aus Bild hinzufügen<br>
+             </div>
+            <div class="line">
+                <div class="small-text" style="margin-top: 10px;"><b>Quellfenster:</b><br />
+                    <div class="maskquellbox">DN_BFMaske</div>
+                <div class="mask-spinner">
+                    &#x2335;
+                </div>
+            </div>
+        </div>
+        <div class="mask-win">
+            <div class="small-text"><span class="active-circle"></span> Luminanz der Quelle</div>
+            <div class="small-text inactive">◯ Beliebiger Wert außer Null</div>
+            <div class="small-text inactive">◯ Deckfähigkeit der Quelle</div>
+        </div>
+        <div class="under inactive"><span class="check-box" style="border: 1px solid #929292fa;"></span>Maske umkehren
+        </div>
+    </div>
 
+                <p>Klicke mit der rechten Maustaste auf die Maskenebene.<br>
+                Ebenen › Zusammenführen › Gruppe zusammenfassen.</p>
+                <p>Stelle die Deckkraft auf 60%.</p>
+
+</div>
+
+<div class="step-box">
+                <p>Ebenen › Neue Rasterebene.</p>
+                <p>Aktiviere jetzt den Standardpinsel - Größe: 300.<br>
+                Wähle den Pinsel <span class="highlight">DN_Brushe112</span><br>
+                 Setze den Pinsel mit Weiß auf der linken Seite.<br>
+                <img alt="" src="https://i.postimg.cc/rmFwkDbL/DN-FSet-BFairy-02.jpg"></p>
+                <p>Stelle den Mischmodus auf Luminanz und die Deckkraft auf 50%.</p>
+                <p>Ebenen › Duplizieren.</p>
+                <p>Bild › Spiegeln › Horizontal spiegeln.</p>
+                <p>Bild › Spiegeln › Vertikal spiegeln.</p>
+                <p>Stelle die Deckkraft auf 65%.</p>
+
+</div>                
+
+<div class="step-box">
+
+                <p>Aktiviere <span class="highlight">Dein Tube</span>.</p>
+                <p>Öffne die Maske <span class="highlight">DN_Mask483</span> aus dem Material-Ordner und minimiere die Maske.<br>
+                Ebenen › Neue Maskenebene › Aus Bild …</p>
+
+    <!-- Mask Bereich -->
+    <div class="mask-box">
+        <div class="top-title">
+            Maske aus Bild hinzufügen<br>
+             </div>
+            <div class="line">
+                <div class="small-text" style="margin-top: 10px;"><b>Quellfenster:</b><br />
+                    <div class="maskquellbox">DN_Mask483</div>
+                <div class="mask-spinner">
+                    &#x2335;
+                </div>
+            </div>
+        </div>
+        <div class="mask-win">
+            <div class="small-text"><span class="active-circle"></span> Luminanz der Quelle</div>
+            <div class="small-text inactive">◯ Beliebiger Wert außer Null</div>
+            <div class="small-text inactive">◯ Deckfähigkeit der Quelle</div>
+        </div>
+        <div class="under inactive"><span class="check-box" style="border: 1px solid #929292fa;"></span>Maske umkehren
+        </div>
+    </div>
+
+                <p>Klicke mit der rechten Maustaste auf die Maskenebene.<br>
+                Ebenen › Zusammenführen › Gruppe zusammenfassen.</p>
+                <p>Bearbeiten › Kopieren.</p>
+                <p><span class="highlight">Wechsle zurück zu Deinem vorherigen Bild.</span></p>
+                <p>Bearbeiten › Als neue Ebene einfügen.</p>
+                <p>Bild › Größe ändern › Prozentsatz: Verkleinere die Tube nach Bedarf.<br>
+                <span class="highlight"><u>Deaktiviere</u></span> die Option <span class="highlight">Größe aller Ebenen anpassen</span>.</p>
+                <p>Einstellen › Schärfe › Scharfzeichnen.</p>
+                <p>Verschiebe die Tube in die Mitte des Bildes.</p>
+                <p>Stelle den Mischmodus auf Luminanz (V).</p>
+                <p>Ebenen › Duplizieren.</p>
+                <p>Stelle den Mischmodus auf Farbe (V) und die Deckkraft auf 60%.</p>
+
+</div>
+
+<div class="step-box">
+             	<p>Ebenen › Neue Rasterebene.</p>
+				<p>Aktiviere jetzt den Standardpinsel.</p>
+				<p>Wähle den Pinsel <span class="highlight">DN_BFBrushe</span> - Größe: 590.</p>
+				<p>Setze den Pinsel mit der Hintergrundfarbe so, dass die Tube mittig im Text sitzt.<br>
+                 <small class="inst">Orientiere Dich dabei am Vorschaubild.</small></p>
+                <p>Stelle den Mischmodus auf Luminanz (V).</p>
+                <p>Ebenen › Zusammenführen › Alles zusammenfassen.</p>
+                <p>Halte die <span class="highlight">Shift-Taste</span> gedrückt und drücke anschließend <span class="highlight">D</span>.<br>
+                Lege die Kopie anschließend beiseite.<br>
+                Die Kopie benötigen wir später für unseren Avatar.</p>
+                <p><span class="highlight">Aktiviere anschließend wieder das vorherige Bild.</span></p>
+</div>
+
+<div class="step-box">
+                <p>Ebenen › Neue Rasterebene.</p>
+                <p>Fülle die Ebene mit der Hintergrundfarbe.</p>
+                <p>Auswahl › Alles auswählen.</p>
+                <p>Auswahl  › Ändern › Verkleinern - 2 Pixel.</p>
+                <p>Fülle die Auswahl mit Weiß.</p>
+                <p>Auswahl › Ändern › Verkleinern - 4 Pixel.</p>
+                <p>Bearbeiten › Ausschneiden.</p>
+                <p>Auswahl › Auswahl aufheben.</p>    
+                <p>Stelle den Mischmodus auf  Luminanz (V) und die Deckkraft auf 90%.</p>
+                <p>Füge Dein Wasserzeichen und die Copyright-Infos ins Bild ein.</p>
+                <p>Ebenen › Zusammenführen › Alles zusammenfassen.</p>
+                <p>Speichere Dein Bild als JPG ab.<br>
+                Jetzt erstellen wir noch den Avatar.</p>
+</div>
+
+<div class="step-box">
+             <p class="steptut-titel">Avatare</p>
+             <hr>
+                <p>Wechsle zu dem beiseitegelegten Bild.</p>
+                <p>Aktiviere das Auswahlwerkzeug <span class="highlight">Rechteck<span>.<br>
+                Randschärfe: 0</p>
+                <p>Ziehe die Auswahl ungefähr wie im Vorschaubild auf.<br>
+                <img alt="" src="https://i.postimg.cc/v8gPZjvj/DN-FSet-BFairy-03.jpg"></p>
+                <p>Bearbeiten › Kopieren.</p>
+                <p>Öffne ein neues Bild 150 x 150 Pixel - Transparent.</p>
+                <p>Bearbeiten › Als neue Ebene einfügen.</p>
+                <p>Bild › Spiegeln › Horizontal spiegeln.</p>
+                <p>Bild › Größe ändern › Prozentsatz: 80%.</p>
+                <p>Richte das kleine Bild mittig aus.</p>
+
+</div>
+
+<div class="step-box">
+
+                <p>Ebenen › Neue Rasterebene.</p>
+                <p>Fülle die Ebene mit der Hintergrundfarbe.</p>
+                <p>Auswahl › Alles auswählen.</p>
+                <p>Auswahl  › Ändern › Verkleinern - 2 Pixel.</p>
+                <p>Fülle die Auswahl mit Weiß.</p>
+                <p>Auswahl › Ändern › Verkleinern - 4 Pixel.</p>
+                <p>Bearbeiten › Ausschneiden.</p>
+                <p>Auswahl › Auswahl aufheben.</p>    
+                <p>Stelle den Mischmodus auf  Luminanz (V) und die Deckkraft auf 90%.</p>
+				<p>Zum Abschluss fügst Du Dein Wasserzeichen und die Copyright-Infos auf Dein Bild ein.</p>
+                <p>Ebenen › Zusammenführen › Alles zusammenfassen.</p>
+                <p>Speichere Dein Bild als JPG ab.</p>
+
+</div>
+
+<!-- Sep End -->
+<p class="finish">
+        Danke, dass Du mitgemacht hast! 😊<br>
+        Ich hoffe, das Basteln hat Dir genauso viel Freude bereitet wie mir das Erstellen dieses Tutorials.<br><br>
+
+        <span class="finish-meta">
+            Idee: 2008 · Überarbeitung: 24. Juli 2026
+        </span>
+</p>            
+<div class="footer-box">
+    <div class="footer-links">
+        <a href="https://phantasygraphics.blogspot.com/p/forenset.html" target="_blank">Back Tutorials</a>
+        <a href="https://phantasygraphics.blogspot.com/" target="_blank">Home</a>
+    </div>
+</div>
+
+</div></div></div>
 </body>
 </html>
