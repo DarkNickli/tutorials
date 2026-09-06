@@ -208,6 +208,7 @@
   background-color: #7f6f7fde;
   color: #D4AF37;
   text-shadow: 1px 1px 2px #000000b0;
+  box-shadow: 0 0 5px rgb(136, 112, 35);
 }
 
 /* Buttons mit Text */
