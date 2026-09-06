@@ -316,7 +316,7 @@
     font-size: 18px;
     font-weight: 600;
     font-style: italic;
-    color: #8a7222;
+    color: #756120;
     text-shadow: 0 0 5px rgb(212, 175, 55);
     border-bottom: 1px solid rgba(26,12,26,.35);
 }
@@ -347,8 +347,8 @@
 }
 
 .cred a:hover {
-    color: #b8941f;
-    text-shadow: 0 0 5px rgba(212,175,55,0.5);
+    color: #756120;
+    text-shadow: 0 0 5px rgb(212, 175, 55);
     letter-spacing: 5px;    
 }
 
