@@ -290,6 +290,88 @@
   margin-top: 3px;
   margin-bottom: 25px;
 }
+/* ==========================
+   Credits
+========================== */
+
+.cred {
+    margin: 25px;
+    padding: 18px 25px 0;
+    text-align: left;
+    line-height: 1.7;
+}
+
+/* Einleitung */
+
+.cred-intro {
+    margin-bottom: 25px;
+}
+
+/* Bereichsüberschriften */
+
+.cred h3 {
+    display: inline-block;
+    margin: 25px 0 15px;
+    padding-bottom: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a0c1ab8;
+    text-shadow: 0 0 5px rgba(212,175,55,.55);
+    border-bottom: 1px solid rgba(26,12,26,.35);
+}
+
+/* Unterüberschriften */
+
+.cred h4 {
+    margin: 18px 0 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-variant: small-caps;
+    transform: scaleY(1.1);
+    color: #1a0c1a;
+}
+
+/* Absätze */
+
+.cred p {
+    margin: 0 0 10px;
+}
+
+/* Links */
+
+.cred a {
+    color: #1a0c1a99;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cred a:hover {
+    color: #b8941f;
+    text-shadow: 0 0 5px rgba(212,175,55,0.5);
+    letter-spacing: 5px;    
+}
+
+  
+  .cred h4 + p,
+.cred h4 + p ~ p {
+    padding-left: 10px;
+}
+  
+/* Hinweise */
+
+.cred-note {
+    font-size: 13px;
+    color: #7a6d7a;
+}
+
+/* Schluss */
+
+.cred-end {
+    margin-top: 30px !important;
+    padding-top: 15px;
+    border-top: 1px solid rgba(26,12,26,.15);
+    font-style: italic;
+}
 
 /* ==========================================
    About Me
