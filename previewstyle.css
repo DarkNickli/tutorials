@@ -290,6 +290,7 @@
   margin-top: 3px;
   margin-bottom: 25px;
 }
+
 /* ==========================
    Credits
 ========================== */
@@ -300,8 +301,6 @@
     text-align: left;
     line-height: 1.7;
 }
-
-/* Einleitung */
 
 .cred-intro {
     margin-bottom: 25px;
@@ -321,24 +320,9 @@
     border-bottom: 1px solid rgba(26,12,26,.35);
 }
 
-/* Unterüberschriften */
-
-.cred h4 {
-    margin: 18px 0 10px;
-    font-size: 17px;
-    font-weight: 600;
-    font-variant: small-caps;
-    transform: scaleY(1.1);
-    color: #1a0c1a;
-}
-
-/* Absätze */
-
 .cred p {
     margin: 0 0 10px;
 }
-
-/* Links */
 
 .cred a {
     color: #1a0c1a99;
@@ -351,21 +335,12 @@
     text-shadow: 0 0 5px rgb(212, 175, 55);
     letter-spacing: 5px;    
 }
-
   
-  .cred h4 + p,
-.cred h4 + p ~ p {
-    padding-left: 10px;
-}
-  
-/* Hinweise */
 
 .cred-note {
     font-size: 13px;
     color: #7a6d7a;
 }
-
-/* Schluss */
 
 .cred-end {
     margin-top: 30px !important;
