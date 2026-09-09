@@ -1,578 +1,135 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>»DarkNickli`s Tutorials«</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DarkNickli's Tutorials</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://darknickli.github.io/tutorials/tutorialsstyle.css">
+    <script src='https://darknickli.github.io/tutorials/CSSHTscript.js'></script>
+
 <style>
-body {
-  font-family: "Lucida Sans",Verdana;
-  font-size: 14px;
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQVwgmey-NilBmjrljFXxQsuSyiN3lgybqVLZISJFpecljc8iYasCvI_UIJg77M4Jm15FsUz-zb3FCP8xm_O_4Sb9PyLRdDK5QR2WHoZf2b_zuamg1E8isViNlRG8mUX9OTMtWUkw6nLB-E079Jf_GCMfeAg76Z3o3s44K2MDL7gILOw/s1600/BG2.png');
-  background-color: #1a0c1a;
-  color: #1a0c1a;
-  margin: 0;
-  padding: 0;
-}
-        
-.highlight {background-color:#D4AF37;}
-        
-#container {
-  margin: 20px auto;
-  width: 1300px;
-  height: auto;
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQVwgmey-NilBmjrljFXxQsuSyiN3lgybqVLZISJFpecljc8iYasCvI_UIJg77M4Jm15FsUz-zb3FCP8xm_O_4Sb9PyLRdDK5QR2WHoZf2b_zuamg1E8isViNlRG8mUX9OTMtWUkw6nLB-E079Jf_GCMfeAg76Z3o3s44K2MDL7gILOw/s1600/BG2.png');
-  padding-bottom: 0px;
-}
 
-#banner {
-  border-style: none;
-  border-color: inherit;
-  border-width: medium;
-  position: relative;
-  width: 1200px;
-  height: 400px;
-  background-size: cover;
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWhsaxsHSZzVZbNj0sCD_ZwbM2clxB28dbr4M7Xd5w-3Ds-2Q7D9mTE2KWEKxIWoO9hCyETpPQzwGZHVJ4WU8EUsRF8ihaMDniAnEA4tqDPoZua2Mj8uzkFXVZyK4HQRICghMEieaIeKYODwEzQivn06X6eUTCf4621tG1bIDCkWezNg/s1600/BannerDN.jpg');
-  background-position: center;
-  text-align: center;
-}
-       
-/* Navigation Menu */
-.submenu {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  text-align: left; 
-  background-color: #b0acb0;
-  border: 1px solid #D4AF37;
-  padding: 10px;
-  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
-  color: #1a0c1a;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  -moz-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;        
-}
+/* ========================================
+   Newsbox
+   ======================================== */
 
-.submenu a {
-  margin: 0 15px;
-  font-size: 1.2em;
-  color: #1a0c1a;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.submenu a:hover {
-  color: #7d6d7d;         
-}
-
-#dropdown2 {background-color: #b0acb0;
-
-  position: relative;
-  border: 1px solid #D4AF37;
-  color: #1a0c1a;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 6px;
-  margin-left: -17px; 
-  margin-right: -20px; 
-  width: calc(100% + 38px); 
-  margin-bottom: -10px;
-  -webkit-box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
-  -moz-box-shadow: 0px 0px 0px 3px rgba(26,12,26,1);
-  box-shadow: 0px 0px 0px 2px rgb(26, 12, 26);
-    }
-
-#inhalt {
-  background-size: cover;
-  background-position: center;
-  color: #f9f8f9;
-  text-align: center;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  border: 1px solid #D4AF37;
-  background-color: #7d6d7d;
-  -webkit-border-radius: 8px 8px 8px 8px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
-}
-        
-#inhalt-inner {
-  background-size: cover;
-  background-position: center;
-  color: #f9f8f9;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-h1{
-  font-size: 35px;
-  font-weight: bold;
-  letter-spacing: 4px; 
-  height: 18px;
-  color: #ededed; 
-  text-transform:uppercase;
-  text-shadow: 5px 5px 5px #292727;
-}
-        
-h2, h3, h4{
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: capitalize;
-  letter-spacing: 4px;
-  height: 18px;
-  color: #1a0c1a; 
-  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;   
-}
-        
-h3{
-  margin: -5px 0 15px;
-}
-        
-h4 {
-  margin: 0px 0 15px;
-}
-        
-h5 {
-  font-family: "Lucida Sans",Verdana; 
-  margin: 0px 0 15px;
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
-  color: #1a0c1a;
-}
-
-h5 a{
-  color: #1a0c1a;
-  text-decoration: none;
-}
-
-h5 a:hover{
-  color: #7d6d7d;
-}
-
-.preview{
-  box-shadow: #292727 0px 0.0625em 0.0625em, #292727 0px 0.125em 0.5em, #292727 0px 0px 0px 1px inset;
-}
-        
- #protab {
-  margin-left: auto;
-  margin-right: auto;
-}
-        
-#program{
-  text-transform:uppercase;
-  font-family:Verdana,Verdana;
-  letter-spacing: 1px; 
-  font-size: 13px;
-  text-shadow: 0px 0px 3px #fff, 1px 1px 0px #fff;
-  width: auto;
-  height: 20px;
-  background-color: #b0acb0;
-  border: 1px solid #D4AF37;
-  color: #1a0c1a;
-  text-align: center;
-  line-height: 20px;
-  padding: 5px 20px;
-  webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-
-}
-         
-  hr {
-  width: 25%;            
-  border: 0;             
-  border-top: 1px solid #1a0c1a;
-  margin-top: 2px;
-  margin-bottom:5px;
-} 
-         
-#info1{ 
-  position: relative;
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjduK7re1LZi6_t-6sQX6mkd8w3JAUCWz-yxEBZIPWvqaMXsjzrdMX0cQDWnZdZrvIWhlUeRUxgVprPiiQmMeZjWzec9v5BzESWHXNn4gQoq2SVmU3UwUZjnFGjYwkXVxbjt0wsWcN0OzWiks68IMEviWh-lCYB-Hf-0dIHXbL7tJNBUA/s1600/BG1.png');
-  padding: 20px 20px 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-  vertical-align: middle;
-  border-left: 1px solid #D4AF37;
-  border-bottom: 5px solid #1a0c1a;
-  border-right: 1px solid #D4AF37;
-  border-top: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -webkit-border-radius: 8px 8px 8px 8px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
-}
-
-#info1::before {
-  content: 'Information';
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  top: -10px;
-  left: -25px;
-  width: auto;
-  height: 20px;
-  background-color: #1a0c1a;
-  border: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  color: #f0f0f0;
-  text-align: center;
-  line-height: 20px;
-  padding: 5px 20px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-}
-
-#info2 {  
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjduK7re1LZi6_t-6sQX6mkd8w3JAUCWz-yxEBZIPWvqaMXsjzrdMX0cQDWnZdZrvIWhlUeRUxgVprPiiQmMeZjWzec9v5BzESWHXNn4gQoq2SVmU3UwUZjnFGjYwkXVxbjt0wsWcN0OzWiks68IMEviWh-lCYB-Hf-0dIHXbL7tJNBUA/s1600/BG1.png');
-  position: relative;
-  padding: 55px 20px 20px;
-  min-padding: 55px 20px 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-  vertical-align: middle;
-  border-left: 1px solid #D4AF37;
-  border-bottom: 5px solid #1a0c1a;
-  border-right: 1px solid #D4AF37;
-  border-top: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -webkit-border-radius: 8px 8px 8px 8px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
-  counter-increment: step; 
-}
-
-/* Dekorationselement in der Zelle */
-#info2::before {
-  content: 'Erklärungen: '; 
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  top: 15px;
-  left: -5px;
-  width: 739px;
-  padding: 5px 20px;
-  background-color: #1a0c1a;
-  border: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  color: #f0f0f0;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-}
-
-#info3 {
-  position: relative;
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjduK7re1LZi6_t-6sQX6mkd8w3JAUCWz-yxEBZIPWvqaMXsjzrdMX0cQDWnZdZrvIWhlUeRUxgVprPiiQmMeZjWzec9v5BzESWHXNn4gQoq2SVmU3UwUZjnFGjYwkXVxbjt0wsWcN0OzWiks68IMEviWh-lCYB-Hf-0dIHXbL7tJNBUA/s1600/BG1.png');
-  padding: 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-  vertical-align: middle;
-  border-left: 1px solid #D4AF37;
-  border-bottom: 5px solid #1a0c1a;
-  border-right: 1px solid #D4AF37;
-  border-top: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -webkit-border-radius: 8px 8px 8px 8px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
-}
-
-#info3::before {
-  content: 'Web-Programmierung';
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  top: -10px;
-  left: -25px;
-  width: auto;
-  height: 20px;
-  background-color: #1a0c1a;
-  border: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  color: #f0f0f0;
-  text-align: center;
-  line-height: 20px;
-  padding: 5px 20px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-}
-#info4 {
-  position: relative;
-  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjduK7re1LZi6_t-6sQX6mkd8w3JAUCWz-yxEBZIPWvqaMXsjzrdMX0cQDWnZdZrvIWhlUeRUxgVprPiiQmMeZjWzec9v5BzESWHXNn4gQoq2SVmU3UwUZjnFGjYwkXVxbjt0wsWcN0OzWiks68IMEviWh-lCYB-Hf-0dIHXbL7tJNBUA/s1600/BG1.png');
-  padding: 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-  vertical-align: middle;
-  border-left: 1px solid #D4AF37;
-  border-bottom: 5px solid #1a0c1a;
-  border-right: 1px solid #D4AF37;
-  border-top: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -moz-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.18);
-  -webkit-border-radius: 8px 8px 8px 8px;
-  -moz-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
-}
-
-#info4::before {
-  content: 'Vorschau';
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  top: -10px;
-  left: -25px;
-  width: auto;
-  height: 20px;
-  background-color: #1a0c1a;
-  border: 1px solid #D4AF37;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
-  color: #f0f0f0;
-  text-align: center;
-  line-height: 20px;
-  padding: 5px 20px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-}
-
-
-.content1, .content2{
-  color: #1a0c1a;
-  font-family:Verdana,Verdana, Verdana;
-  letter-spacing: 0px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 21px;
-  text-shadow: 0px 0px 5px #fff, 1px 1px 0px #fff;
-  line-height: 20px;
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-}
-        
- /* Vorwort */    
-.content2{
-  padding-top: 5px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  letter-spacing: 0px;
-}
-
-.note{
-  text-decoration: none;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  font-variant: small-caps;
-}
-
-.mat{font-family: "Lucida Sans",Verdana;   font-size: 18px; ;
-}
-        
-/* Codebox */ 
-.code-block {text-align: left;
-  position: relative;
-  background-color: #1e1e1e;
-  color: #ddd;
-  padding: 25px;
-  border-radius: 6px;
-  font-family: monospace;
-  overflow: auto;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-
-.copy-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background-color: #444;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  font-size: 0.8em;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
-  opacity: 0.7;
-  z-index: 10;
-}
-
-.copy-btn:hover {
-  opacity: 1;
-  background-color: #ededed;
-  color: black;
-}
-
-.copy-btn svg {
-  flex-shrink: 0;
-  pointer-events: none;
-}
-
-.copy-btn::after {
-  content: "In die Zwischenablage";
-  position: absolute;
-  top: -28px;
-  right: 0;
-  background: black;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.7em;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateY(5px);
-  pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.copy-btn:hover::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-.code-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 2px 8px;
-  font-size: 0.8em;
-  border-radius: 3px;
-  font-family: sans-serif;
-  pointer-events: none;
-  user-select: none;
-  opacity: 0.9;
-  z-index: 5;
-  text-shadow: none;
-}
-
-.code {   text-shadow: none; 
-  max-width: 678px;             
-  overflow-x: auto;             
-  white-space: pre;   
-}
-
-.code-con { 
-  border-radius: 3px; 
-  background-color:#b1b1b1; 
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-/* ueberschrift1+2 */
-.ueberschrift-1 {
-text-align: left;
-text-decoration: underline; 
-font-family: Tahoma, Geneva, sans-serif;
-margin-bottom: 4px; 
-margin-top: 5px; 
-font-size:18px; 
-font-style: normal;
-font-variant: small-caps;
-text-transform: capitalize;
-}
-
-.ueberschrift-2 {
-text-align: left;
-margin-left: 10px;
-margin-bottom: 0px; 
-margin-top: 0px; 
-margin-right: 0px;
-}
-
-/* Newsbox */
 .newsbox {
-  position: relative;
-  height: 326px;
-  background-image: url(https://i.postimg.cc/qRdHCDcm/DN-Newsbox00.jpg);
-  background-size: 506px 326px; 
-  background-repeat: no-repeat;
-  background-position: center;
+  width: min(500px, 100%);
+  aspect-ratio: 500 / 300;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 48px; 
+  position: relative;
 }
 
-.in-halt {background-color: rgba(23, 17, 8, 0.35);
-  text-shadow: none;
-  direction: rtl;
+
+/* ========================================
+   Newsbox-Grafik
+   ======================================== */
+
+.newsbox-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+/* ========================================
+   Inhaltsbereich
+   ======================================== */
+
+.in-halt {
+  position: absolute;
+
+/*
+   Originalgröße:
+   Breite: 500 px
+   Höhe: 300 px
+
+   Position:
+   oben: 66 px
+   links: 14 px
+*/
+
+  left: 2.8%;
+  top: 22.1%;
+
+  width: 55%;
+  height: 71%;
+
+  box-sizing: border-box;
+
+  padding: 5px 13px;
+
+  background-color: rgba(23, 17, 8, 0.35);
+
+  color: #d1cfcc;
+
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  overflow-y: auto;
+
   scrollbar-width: thin;
   scrollbar-color: #d1cfcc transparent;
-  width: 275px;
-  height: 231px;
-  color: #d1cfcc;
-  font-family: "Lucida Sans",Verdana;
-  font-weight: bold;
-  text-align: center;
-  overflow-y: auto;
-  padding: 5px 13px;
-  margin-top: 46px;    
-  margin-left: -186px;  
-  position: absolute;  
 }
 
 
+/* ========================================
+   Absätze
+   ======================================== */
 
-/* Für Chrome, Edge, Safari */
-.scroll-content::-webkit-scrollbar {
+.in-halt p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* ========================================
+   Scrollbar
+   Chrome / Edge / Safari
+   ======================================== */
+
+.in-halt::-webkit-scrollbar {
   width: 8px;
 }
 
-.scroll-content::-webkit-scrollbar-track {
+.in-halt::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.scroll-content::-webkit-scrollbar-thumb {
+.in-halt::-webkit-scrollbar-thumb {
   background-color: #d1cfcc;
   border-radius: 4px;
 }
 
+
+/* ========================================
+   Credits
+   ======================================== */
+
 .credits {
   margin-top: 10px;
+
   font-size: 7pt;
   font-weight: lighter;
+
   color: #d1cfcc;
+
   text-decoration: none;
+
+  transition: all 0.3s ease;
 }
+
+
+/* ========================================
+   Credits Hover
+   ======================================== */
 
 .credits:hover {
   text-decoration: none;
@@ -580,439 +137,581 @@ margin-right: 0px;
   color: #b1a79e;
 }
 
+
+
 </style>
 
-
-
-
-
-<!-- SCRIPT: Kopier den Bereich -->
-<script>
-function copyBereich(button) {
-  const codeBlock = button.closest(".code-block").querySelector(".code");
-  const text = codeBlock.innerText;
-
-  navigator.clipboard.writeText(text).then(() => {
-    const original = button.innerHTML;
-    button.innerHTML = "✓️ Kopiert!";
-    button.disabled = true;
-
-    setTimeout(() => {
-      button.innerHTML = original;
-      button.disabled = false;
-    }, 1500);
-  });
-}
-</script>
-
-
-
-</head><body>
+</head>
+<body>
 <div id="container">
-<table  align="center" id="inhalt">
-	<tr>
-		<td id="banner">
-		</td>
-	</tr>
-	<tr>
-            <td>
-<div>
-                  <table id="dropdown2">
-                     <tr class="submenu">
-                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding01.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
-                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
-                     </tr>
-                  </table>
-               </div>
-            </td>
-		        </tr>
-		        <tr>
-		        <td id="inhalt-inner" cellspacing="0" cellpadding="2" ><h1>Newsbox Coding mit Grafik</h1>
-		        <h1 style="font-size: 15px; line-height: 20px; letter-spacing: 1px; margin-top:7px;">HTML</h1>
-				<br /> 
-				<br />
-				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info4" align="center" valign="top">
-				<tr>
-				<td class="content2">
-	            Fortsetzung nach der <a target="_blank" href="https://darknickli.github.io/tutorials/WebGrafikNewsbox.htm">Grafik-Erstellung</a>.<br /><br />
-	            <!-- Newsbox -->
+
+<div class="banner-container">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyFn3w-zfQB5Ocln4kYJdNHGtXWFKL17qlVQEmhVqFXH_egXfyEgZB9vNHoqIHTB9yUEWTgfOLdURBJfb5z6gmV8_wWT03tKUbRAXKfahXziMWuQUwX0cHqZHJ_JEVOZFZDtl0TqRmcf5A_G3IXygvgA7SFB-R67hzYl4tTS5ZjfJuWKipppxy0YTBFlg/s1600/BannerDN.jpg" alt="Banner" class="banner-img">
+    <nav class="banner-nav">
+        <a href="https://phantasygraphics.blogspot.com/p/web-coding01.html" target="_blank">Back Tutorials</a>
+        <a href="https://phantasygraphics.blogspot.com/" target="_blank">Home</a>
+    </nav>
+</div>
+
+    <div id="content">
+        <h1>Newsbox Coding mit Grafik</h1>
+		        <p class="subtitle">HTML</p>
+		        
+        <!-- Preview Box -->
+<div class="info-box fancy-title"><span>Vorschau</span>
+	            <p>Fortsetzung nach der <em class="info"><a target="_blank" href="https://darknickli.github.io/tutorials/WebGrafikNewsbox.htm">Grafik-Erstellung</a></em>.</p>
+	            <hr>
+
 <div class="newsbox">
+
+  <!-- Newsbox-Grafik -->
+
+  <img
+    class="newsbox-bg"
+    src="https://i.postimg.cc/qqHL2QDZ/DN-WEBGrafik-Newsbox00.jpg"
+    alt="Newsbox">
+
+  <!-- Inhaltsbereich -->
   <div class="in-halt">
-      <!---Text--->
-    <p>&#10022; Beispiel <br /><br /></p>
-    <p>&#10003; Tutorial bearbeitet <br /></p>
-    <p>&#10003; Layout bearbeitet<br /></p>
-    <p>&#10003; Inhalte wurden überarbeitet<br /></p>
-    <p>&#9642; Die Pose-Ecke wird gerade erstellt<br /><br /></p>
-    <p>&#10022;Viel Spaß mit der Box&#10022;<br /><br /></p>
-    <p><a target="_blank" href="https://phantasygraphics.blogspot.com" class="credits">Newsbox by DarkNickli</a></p>
-    <!---Text end--->
+
+    <!-- Text -->
+    <p><u>&#10022;Beispiel&#10022;</u></p>
+
+    <p>Tutorials überarbeitet. ✓</p>
+    <p>Layout bearbeitet. ✓</p>
+    <p>Inhalte überarbeitet. ✓</p>
+    <p>Sign-Tutorial geschrieben. ✓</p>
+    <p>Filter erstellt. ✓</p>
+
+    <p>&#10022;Viel Spaß mit der Box&#10022;</p>
+
+    <p>
+      <a
+  href="https://phantasygraphics.blogspot.com"
+  target="_blank"
+  rel="noopener"
+  class="credits">
+        Newsbox by DarkNickli
+      </a>
+    </p>
+    <!-- Text Ende -->
+
   </div>
 </div>
-<!-- Newsbox End -->
-                </td>
-				</tr>
-				</table>
-				<br />
-				<br />
-<!-- Web-Cod -->
-				<br />
-				<table width="770" border="0" cellspacing="0" cellpadding="2" id="info3" align="center" valign="top">
-				<tr>
-				<td class="content2">
-				Kopiere den folgenden Code und setze ihn in den <code class="code-con">&lt;body&gt;</code>-Bereich Deiner Webseite.
-	            
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
+
+
+
+</div><br>
+
+
+
+		        
+        
+        <!-- Step by Step -->
+<div class="webpro-box">
+
+    <div class="webpro">
+        Web-Programmierung
+    </div>
+		        <p>Kopiere einfach das folgende Skript und füge es in den <code class="code-con">&lt;body&gt;</code>-Bereich Deiner Webseite.</p>
+ <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
 <div class="code-block">
-  <div class="code-label">html</div>
+  <div class="code-label">HTML</div>
   <pre class="code">
- &lt;!-- Start der Newsbox mit Hintergrundbild und zentriertem Inhalt --&gt;
+
 &lt;div class="newsbox"&gt;
-&lt;div class="inhalt"&gt;
 
-&lt;!-- Hier kommt Dein News-Inhalt rein --&gt;
-&lt;p&gt;✦Beispiel:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;✓ Neue Tutorials&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;✓ Download-Ecke&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;✓ Feedback Ecke&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;:•.Viel Spaß mit der Box.•:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target="_blank" href="https://phantasygraphics.blogspot.com" class="Credits"&gt;Newsbox by DarkNickli&lt;/a&gt;&lt;/p&gt;
-&lt;!--- News-Inhalt Ende ---&gt;
+  &lt;!-- Newsbox-Grafik --&gt;
+  &lt;img
+    class="newsbox-bg"
+    src="Bilder/Newsbox.jpg"
+    alt="Newsbox"&gt;
 
+  &lt;!-- Inhaltsbereich --&gt;
+  &lt;div class="in-halt"&gt;
+
+    &lt;!-- Text --&gt;
+    &lt;p&gt;&lt;u&gt&#10022;Beispiel&#10022;&lt;/u&gt;&lt;/p&gt;
+
+    &lt;p&gt;Tutorials überarbeitet. ✓&lt;/p&gt;
+    &lt;p&gt;Layout bearbeitet. ✓&lt;/p&gt;
+    &lt;p&gt;Inhalte überarbeitet. ✓&lt;/p&gt;
+    &lt;p&gt;Sign-Tutorial geschrieben. ✓&lt;/p&gt;
+    &lt;p&gt;Filter erstellt. ✓&lt;/p&gt;
+
+    &lt;p&gt;&#10022;Viel Spaß mit der Box&#10022;&lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;a
+  href="https://phantasygraphics.blogspot.com"
+  target="_blank"
+  rel="noopener"
+  class="credits"&gt;
+
+        Newsbox by DarkNickli
+      &lt;/a&gt;
+    &lt;/p&gt;
+
+    &lt;!-- Text Ende --&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Ende der Newsbox --&gt;
-</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
+&lt;/div&gt;</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
 </div></div>
 
-             Kopiere den Stil-Code in Deine <code class="code-con">CSS-Datei</code>.<br/>
-             Du kannst die Farben anschließend an Dein Design anpassen.
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
+		        <p>Kopiere den Stil-Code in Deine <code class="code-con">CSS-Datei</code>.<br>
+		        Du kannst die Farben anschließend an Dein Design anpassen.</p>
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
 <div class="code-block">
-  <div class="code-label">css</div>
+  <div class="code-label">CSS</div>
   <pre class="code">
- .newsbox {
-position: relative;
-width: 580px;
-height: 326px;
-background-image: url(IMG/Newsbox.jpg);
-background-size: 506px 326px; 
-background-repeat: no-repeat;
-background-position: center;
-background-repeat: no-repeat;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-align-items: flex-start;
-padding-top: 48px; 
-}
-
-.inhalt {background-color: rgba(23, 17, 8, 0.35);
-direction: rtl;
-scrollbar-width: thin;
-scrollbar-color: #d1cfcc transparent;
-width: 275px;
-height: 231px;
-color: #d1cfcc;
-font-family: "Lucida Sans",Verdana;
-font-weight: bold;
-text-align: center;
-overflow-y: auto;
-padding: 5px 13px;
-margin-top: 46px; 
-margin-left: -186px; 
-position: absolute; 
-}
-
-/* Für Chrome, Edge, Safari */
-.scroll-content::-webkit-scrollbar {
-width: 8px;
-}
-
-.scroll-content::-webkit-scrollbar-track {
-background: transparent;
-}
-
-.scroll-content::-webkit-scrollbar-thumb {
-background-color: #d1cfcc;
-border-radius: 4px;
-}
-
-.Credits {
-margin-top: 10px;
-font-size: 9pt;
-font-weight: lighter;
-color: #d1cfcc;
-text-decoration: none;
-}
-
-.credits a {
-color: #e3bf99;
-text-decoration: none;
-}
-
-.credits a:active {
-color: #2b1108;
-}
-
-.Credits:hover {
-font-size: 8pt;
-text-decoration: none;
-color: #e3bf99;
-}
-</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
-</div></div>
-                </td>
-				</tr>
-				</table>
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-<!-- Web-Cod -->
-	<table width="770" border="0" cellspacing="0" cellpadding="2" id="info2" align="center" valign="top">
-	<tr>
-	<td class="content1">
-<p class="ueberschrift-1">１. Die Hauptbox<br /></p>
-<p class="ueberschrift-2">Hier bestimmst Du die Größe der Box sowie das verwendete Hintergrundbild.</p>
-	            
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
-<div class="code-block">
-  <div class="code-label">css</div>
-  <pre class="code">
+/* Newsbox */
 .newsbox {
-position: relative; 			/* Ermöglicht die absolute Positionierung von Kind-Elementen */
-height: 326px; 				/* Höhe der Newsbox */
-background-image: url(img/Newsbox.jpg); /* Hintergrundbild der Box */
-background-size: 506px 326px; 		/* Größe des Hintergrundbilds */
-background-repeat: no-repeat; 		/* Kein Wiederholen des Hintergrundbilds */
-background-position: center; 		/* Zentriert das Hintergrundbild */
-margin: 0 auto; 			/* Zentriert die Box horizontal */
-display: flex; 				/* Aktiviert Flexbox für den Inhalt */
-justify-content: center; 		/* Zentriert Inhalt horizontal */
-align-items: flex-start; 		/* Inhalt wird oben ausgerichtet */
-padding-top: 48px; 			/* Abstand von oben zum Inhalt */
-}</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
-</div></div>
-<p style="text-align: left;width: 628px;padding-left: 50px;">
-<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830;Anpassungen:<br /></em>
-<code class="code-con">height:</code> → Höhe der dunklen Box.<br />
-<code class="code-con">background-size:</code> → Hier legst Du fest, wie groß das Hintergrundbild in der Box dargestellt werden soll.<br /><br /></p>
-<p class="ueberschrift-1">２. Der Inhalt (id="inhalt")<br /></p>
-<p class="ueberschrift-2">Das ist der scrollbare Inhalt der Newsbox.</p>
-
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
-<div class="code-block">
-  <div class="code-label">css</div>
-  <pre class="code">
- .inhalt {
-background-color: rgba(23, 17, 8, 0.35);/* Halbtransparenter dunkler Hintergrund */
-direction: rtl; 			/* Schreibrichtung: von rechts nach links */
-scrollbar-width: thin; 			/* Dünner Scrollbalken (für Firefox) */
-scrollbar-color: #d1cfcc transparent; 	/* Scrollbalken-Farbe */
-
-width: 275px; 				/* Breite des Inhaltsbereichs */
-height: 231px; 				/* Höhe des Inhaltsbereichs */
-
-color: #d1cfcc; 			/* Schriftfarbe */
-font-family: "Lucida Sans", Verdana; 	/* Schriftart */
-font-weight: bold; 			/* Fettere Schrift */
-text-align: center; 			/* Zentrierter Text */
-
-overflow-y: auto; 			/* Vertikaler Scrollbalken erscheint bei Bedarf */
-
-padding: 5px 13px; 			/* Innenabstand: oben/unten 5px, rechts/links 13px */
-margin-top: 46px; 			/* Abstand von oben (Positionierung innerhalb der Newsbox) */
-margin-left: -186px; 			/* Verschiebung nach links (negative Margin) */
-
-position: absolute; 			/* Absolute Positionierung relativ zum nächsten `relative`-Elternelement */
-}
-</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
-</div></div>
-<p style="text-align: left;width: 628px;padding-left: 50px;">
-<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830;Anpassungen:<br /></em>
-<code class="code-con">background-color:</code> → Ersetze den Farbwert durch eine Farbe deiner Wahl<br /> (auch mit Transparenz möglich, z. B. rgba).<br />
-<code class="code-con">scrollbar-color:</code> → Hier kannst Du die breite und die höhe festlegen <br />von Dein Bild.<br />
-<code class="code-con">width:</code> → Breite des scrollbaren Textbereichs.<br />
-<code class="code-con">height:</code> → Höhe des scrollbaren Textbereichs.<br />
-<code class="code-con">scrollbar-color</code> und <code class="code-con">scrollbar-width</code> → Damit bestimmst du das Aussehen <br />der Scrollbar (nur in Firefox sichtbar).<br />
-<code class="code-con">font-family:</code> → Wähle eine Schriftart, die zu Deinem Design passt<br /> (z. B. Arial, Georgia, Verdana).<br />
-<code class="code-con">font-weight:</code> → Legt die Schriftstärke fest (z. B. normal, bold, lighter).<br />
-<code class="code-con">text-align:</code> → Zentriert oder linksbündig ausrichten.<br /><br />
-
-
-<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830;Hinweis zum Scrollbalken und Symbolen<br /></em>
-Wenn der Scrollbalken links steht (z. B. durch <code class="code-con">direction: rtl;</code>), kann <br />es passieren, dass Symbole wie das Häkchen &#10003;an der <mark class="highlight">„falschen“</mark> Stelle <br />erscheinen.<br />
-Das heißt: Statt <mark class="highlight">„✓ Neue Tutorials“</mark> wird angezeigt: <mark class="highlight">„Neue Tutorials ✓“</mark>, <br />denn das Symbol steht hinter dem Text statt davor.<br /><br />
-Das liegt daran, dass durch die Schreibrichtung <code class="code-con">rtl</code> der Textfluss <br />umgekehrt wird.<br />
-Der Text ist zwar noch gut lesbar, aber die Symbole <mark class="highlight">„wandern“</mark> an <br />eine ungewollte Position.<br />
-Falls Dich das stört, kannst Du es ganz einfach beheben:</p>
-<p class="ueberschrift-2">1.Entferne aus Deinem CSS den folgenden Code:</p>
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
-<div class="code-block">
-  <div class="code-label">css</div>
-  <pre class="code">
-.inhalt {
-direction: rtl;
-}
-</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
-</div></div>
-<p class="ueberschrift-2">2.Füge stattdessen folgenden Code ein, um den Scrollbalken schmal und farblich passend<br /> zum Design darzustellen.</p>
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
-<div class="code-block">
-  <div class="code-label">css</div>
-  <pre class="code">
-.inhalt {
-scrollbar-width: thin;
-scrollbar-color: #3f2e40 transparent;
-}
-</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
-</div></div>
-&#9830; So bleibt der Scrollbalken rechts und die Symbole stehen dort, wo sie hingehören.<br /><br />
-<p class="ueberschrift-1">３. Optional: Scrollbar für WebKit-Browser<br /></p>
-<p class="ueberschrift-2">Damit der Scrollbalken auch in Chrome, Safari und Edge sichtbar und gestaltbar ist.</p>
-
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
-<div class="code-block">
-  <div class="code-label">css</div>
-  <pre class="code">
-  					/* Für Chrome, Edge, Safari */
-.scroll-content::-webkit-scrollbar {
-width: 8px; 				/* Breite des vertikalen Scrollbalkens */
+  width: min(500px, 100%);
+  aspect-ratio: 500 / 300;
+  margin: 0 auto;
+  position: relative;
 }
 
-.scroll-content::-webkit-scrollbar-track {
-background: transparent;  		/* Hintergrund der Scrollbar-Spur bleibt unsichtbar */
+/* Newsbox-Grafik */
+.newsbox-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.scroll-content::-webkit-scrollbar-thumb {
-background-color: #d1cfcc; 		/* Farbe des Scrollbalkens (Daumen) */
-border-radius: 4px;        		/* Abgerundete Ecken für weicheren Look */
-}
-</pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
-</div></div>
-&#9830; Du kannst die Farbe und Breite der Scrollbar hier nach Deinem Geschmack anpassen.<br /><br />
-<p class="ueberschrift-1">４. Die Quellenangabe (.Credits)<br /></p>
-<p class="ueberschrift-2">Dies ist der Link ganz unten in der Newsbox, der auf die Quelle oder den Urheber hinweist.</p>
+/* Inhaltsbereich */
+.in-halt {
+  position: absolute;
+  /*
+     Originalgröße:
+     Breite: 500 px
+     Höhe: 300 px
 
-	            <!-- CODEBLOCK: Kopierbarer Bereich  -->
-<div class="code-container" id="meinBereich">
-<div class="code-block">
-  <div class="code-label">css</div>
-  <pre class="code">
+     Position:
+     oben: 66 px
+     links: 14 px
+  */
+  left: 2.8%;
+  top: 22.1%;
+  width: 55%;
+  height: 71%;
+  box-sizing: border-box;
+  padding: 5px 13px;
+  background-color: rgba(23, 17, 8, 0.35);
+  color: #d1cfcc;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1cfcc transparent;
+}
+
+/* Absätze */
+.in-halt p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Scrollbar Chrome / Edge / Safari */
+.in-halt::-webkit-scrollbar {
+  width: 8px;
+}
+
+.in-halt::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.in-halt::-webkit-scrollbar-thumb {
+  background-color: #d1cfcc;
+  border-radius: 4px;
+}
+
+/* Credits */
+
 .credits {
-margin-top: 10px; 	/* Abstand nach oben */
-font-size: 7pt; 	/* Schriftgröße in Punkt */
-font-weight: lighter; 	/* Dünne Schrift für eleganten Look */
-color: #d1cfcc; 	/* Helle Textfarbe im normalen Zustand */
-text-decoration: none; 	/* Keine Unterstreichung bei Links */
+  margin-top: 10px;
+  font-size: 7pt;
+  font-weight: lighter;
+  color: #d1cfcc;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .credits:hover {
-text-decoration: none; 	/* Auch beim Hover keine Unterstreichung */
-letter-spacing: 1px; 	/* Etwas mehr Buchstabenabstand beim Überfahren */
-color: #b1a79e; 	/* Sanfte Farbänderung beim Hover für Interaktivität */
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #b1a79e;
 }
 </pre>
-  <button class="copy-btn" onclick="copyBereich(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 24 24" width="14" fill="currentColor">
-      <path d="M0 0h24v24H0V0z" fill="none"/>
-      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/>
-    </svg>
-    <span>Kopieren</span>
-  </button>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
 </div></div>
-<p style="text-align: left;width: 628px;padding-left: 50px;">
-<em style="letter-spacing: 0.1em;margin-bottom:4px;text-decoration: underline;">&#9830;Anpassungen:<br /></em>
-<code class="code-con">font-size:</code> → Schriftgröße (z. B. größer oder kleiner einstellbar)<br />
-<code class="code-con">font-weight:</code> → Schriftstärke festlegen (z. B. normal, bold, lighter)<br />
-<code class="code-con">color:</code> → Farbe des Links oder Texts im normalen Zustand<br />
-<code class="code-con">text-decoration:</code> → z. B. Unterstreichung entfernen oder hinzufügen<br />
-<code class="code-con">letter-spacing:</code> → Abstand zwischen den Buchstaben (z. B. beim Hover-Effekt)<br />
-<code class="code-con">color (hover):</code> → arbe, die erscheint, wenn man mit der Maus darüberfährt<br />
 
-</p>
-                </td>
-				</tr>
-				</table>
-	<br /><p style="color: #1a0c1a; text-shadow: 1px 1px 0 #f0f0f0, 1px -1px 0 #f0f0f0, -1px 1px 0 #f0f0f0, -1px -1px 0 #f0f0f0, 1px 0px 0 #f0f0f0, 0px 1px 0 #f0f0f0, -1px 0px 0 #f0f0f0, 0px -1px 0 #f0f0f0;">
-                Das war's auch schon von mir. &#128522;<br/>
-    				Verfasst am 13.Februar 2007, aktualisiert am 26.Juli 2025</p> 
-<!-- Sep End -->													
-</td>	<tr>
-		<td>               <div>
-                  <table id="dropdown2">
-                     <tr class="submenu">
-                        <td align="left" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/p/web-coding01.html" target="_blank;"><strong>Web-Coding Tutorials</strong></a>&lt;</td>
-                        <td align="right" style="height: 20px">&gt;<a href="https://phantasygraphics.blogspot.com/" target="_blank;"><strong>Home</strong></a>&lt;</td>
-                     </tr>
-                  </table>
-               </div>
-</td>
-	</tr>
-		<tr>
-		<td>&nbsp;</td>
-	</tr>
 
-</table>
+    <div class="webpro-explanation">
 
+    <h3 class="explanation-title">
+        Erklärung
+    </h3>    
+		        <p class="webpro-subtitle1"><span class="highlight"><u>1. Die Newsbox</u></span></p>
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
+<div class="code-block">
+  <div class="code-label">HTML</div>
+  <pre class="code">
+  &lt;div class="newsbox"&gt;
+
+  &lt;!-- Newsbox-Grafik --&gt;
+  &lt;img
+    class="newsbox-bg"
+    src="Bilder/Newsbox.jpg"
+    alt="Newsbox"&gt;
+
+  &lt;!-- Inhaltsbereich --&gt;
+  &lt;div class="in-halt"&gt;
+
+    &lt;!-- Text --&gt;
+
+...
+    &lt;!-- Text Ende --&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>
+		        <p>
+		        <em style="letter-spacing: 0.1em;text-decoration: underline;">Anpassungen:<br></em>
+		        <code class="code-con">&lt;div class="newsbox"&gt;</code> → Erstellt den äußeren Bereich der Newsbox.<br>
+		        <code class="code-con">&lt;img class="newsbox-bg"&gt;</code> → Fügt die Newsbox-Grafik ein.<br>
+		        <code class="code-con">&lt;div class="in-halt"&gt;</code> → Enthält den News-Inhalt und bildet den scrollbaren Bereich.<br>            
+		        <code class="code-con">&lt;p&gt;...&lt;/p&gt;</code> → Erstellt einen News-Eintrag. Den Text kannst Du durch Deine eigene Nachricht ersetzen.<br>
+		        <code class="code-con">&lt;a ...&gt;</code> → Erstellt den Link am unteren Ende der Newsbox. Passe die Adresse und den Linktext nach Deinen Wünschen an.</p>
+
+	      <p class="text-block tipp" style="padding-left: 10px;padding-right: 10px;">
+				<u>Tipp:</u><br>
+				  Du kannst die Beispieltexte und Symbole jederzeit durch Deine eigenen Inhalte ersetzen. <b>Die HTML-Struktur sollte dabei erhalten bleiben</b>, damit die Newsbox korrekt funktioniert.</p>
+        
+          <p style="margin-bottom: 5px;">Passe den Pfad im <code class="code-con">src</code>-Attribut an:</p> 
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" style="margin-top: 0px;">
+<div class="code-block">
+  <div class="code-label">HTML</div>
+  <pre class="code">
+  &lt;!-- Newsbox-Grafik --&gt;
+  &lt;img
+    class="newsbox-bg"
+    src="Bilder/Newsbox.jpg"
+    alt="Newsbox"&gt;</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>   
+
+	      <p class="text-block tipp" style="padding-left: 10px;padding-right: 10px;">
+      <u>Hinweis</u><br>
+        Achte darauf, dass sich das Bild <code class="code-con">Newsbox.jpg</code> im Ordner <code class="code-con">Bilder</code> befindet.<br>
+        Passe den Pfad im <code class="code-con">src</code>-Attribut an, falls sich Dein Bild in einem anderen Ordner befindet.</p>
+
+<br>
+<hr>
+
+		        <p class="webpro-subtitle1"><span class="highlight"><u>2. Die Newsbox CSS-Datei</u></span></p>
+		        <p>Das ist der äußere Bereich der Newsbox.</p>
+ <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
+<div class="code-block">
+  <div class="code-label">CSS</div>
+  <pre class="code">
+.newsbox { 
+  width: min(500px, 100%); 
+  aspect-ratio: 500 / 300; 
+  margin: 0 auto; 
+  position: relative; 
+}</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>
+		        <p><em style="letter-spacing: 0.1em;text-decoration: underline;">Anpassungen:<br></em>
+		        <code class="code-con">width: min(500px, 100%);</code> → Legt die maximale Breite der Newsbox fest.<br>
+            <p>Die Newsbox wird maximal <b>500 Pixel breit</b>. Ist auf der Webseite weniger Platz vorhanden, wird sie automatisch kleiner.<br>
+		        <p><code class="code-con">aspect-ratio: 500 / 300;</code> → Behält das Seitenverhältnis der Newsbox-Grafik bei.<br>
+		        <p><code class="code-con">margin: 0 auto;</code> → Zentriert die Newsbox horizontal.<br>
+		        <p><code class="code-con">position: relative;</code> → Ermöglicht die genaue Positionierung des Inhaltsbereichs innerhalb der Newsbox.</p>
+
+	      <p class="text-block tipp" style="padding-left: 10px;padding-right: 10px;">
+				<u>Wichtig:</u><br>
+				  Die ursprüngliche Grafik hat eine Größe von <b>500 × 300 Pixel</b>.<br>
+          Diese Größe dient als Grundlage für die automatische Skalierung.<br>
+          Ist beispielsweise nur eine Breite von 400 Pixeln verfügbar, wird die Newsbox automatisch proportional verkleinert.<br>
+          Du musst dafür <b>keine Größe von Hand anpassen</b>.</p>
+
+<br>
+
+<hr>
+
+		        <p class="webpro-subtitle1"><span class="highlight"><u>3. Die Newsbox-Grafik</u></span></p>
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
+<div class="code-block">
+  <div class="code-label">CSS</div>
+  <pre class="code">
+.newsbox-bg { 
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+}</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>
+		        <p>
+		        <em style="letter-spacing: 0.1em;text-decoration: underline;">Anpassungen:<br></em>
+		        <code class="code-con">width: 100%;</code> → Die Grafik nimmt immer die gesamte verfügbare Breite der Newsbox ein.<br>
+		        <code class="code-con">height: 100%;</code> → Die Höhe wird entsprechend der Größe der Newsbox angepasst.<br>
+		        <code class="code-con">display: block;</code> → Verhindert einen zusätzlichen kleinen Abstand, der bei Bildern entstehen kann.</p>
+
+	      <p class="text-block tipp" style="padding-left: 10px;padding-right: 10px;">
+        <u>Wichtig:</u><br>
+				  Die Grafik ist jetzt <b>kein Hintergrundbild mehr</b>, sondern ein eigenes <code class="code-con">&lt;img&gt;</code>-Element.<br>
+          Das hat einen wichtigen Vorteil:<br>
+          <b>Der Inhaltsbereich kann sich direkt an der Größe der Grafik orientieren.</b><br>
+          Dadurch kann die gesamte Newsbox proportional mitskalieren.</p>
+
+<br>
+<hr>
+
+
+		        <p class="webpro-subtitle1"><span class="highlight"><u>4. Der Inhaltsbereich</u></span></p>
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
+<div class="code-block">
+  <div class="code-label">CSS</div>
+  <pre class="code">
+.in-halt { 
+  position: absolute; 
+  left: 2.8%; 
+  top: 22.1%; 
+  width: 55%; 
+  height: 71%; 
+  box-sizing: border-box; 
+  padding: 5px 13px; 
+  background-color: rgba(23, 17, 8, 0.35); 
+  color: #d1cfcc; 
+  font-family: "Lucida Sans", Verdana, sans-serif; 
+  font-weight: bold; 
+  text-align: center; 
+  overflow-y: auto; 
+}</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>
+		        <p>Der Inhaltsbereich wird <b>prozentual zur Newsbox positioniert und dimensioniert</b>.</p>
+
+
+<p>
+		        <em style="letter-spacing: 0.1em;text-decoration: underline;">Anpassungen:<br></em>
+		        <code class="code-con">position: absolute;</code> → Positioniert den Inhaltsbereich innerhalb der Newsbox.<br>
+		        <code class="code-con">left: 2.8%;</code> → Legt die horizontale Position des Inhaltsbereichs innerhalb der Grafik fest.<br>
+		        <code class="code-con">top: 22.1%;</code> → Legt die Position des Inhaltsbereichs von oben fest.<br>
+            <code class="code-con">width: 55%;</code> → Legt die Breite des Inhaltsbereichs proportional zur Grafik fest.<br>
+		        <code class="code-con">height: 71%;</code> → Legt die Höhe des Inhaltsbereichs proportional zur Grafik fest.<br>          
+		        <code class="code-con">box-sizing: border-box;</code> → Bezieht den Innenabstand in die angegebene Breite und Höhe mit ein.<br>          
+   		      <code class="code-con">background-color: rgba(23, 17, 8, 0.35);</code> → Gibt dem Inhaltsbereich einen halbtransparenten dunklen Hintergrund.<br>          
+   		      <code class="code-con">color:</code> → Legt die Schriftfarbe fest.<br>          
+   		      <code class="code-con">font-weight:</code> → Legt die Schriftstärke fest.<br>          
+   		      <code class="code-con">text-align:</code> → Richtet den Text horizontal aus.<br> 
+   		      <code class="code-con">overflow-y: auto;</code> → Zeigt einen vertikalen Scrollbalken an, sobald der Inhalt nicht mehr vollständig in<br> den Inhaltsbereich passt.</p> 
+
+	      <p class="text-block tipp" style="padding-left: 10px;padding-right: 10px;">
+        <b>Der besondere Vorteil</b><br>
+				  Da <code class="code-con">left</code>, <code class="code-con">top</code>, <code class="code-con">width</code> und <code class="code-con">height</code> <b>prozentual angegeben sind</b>, verändert sich der Inhaltsbereich zusammen mit der Grafik.<br>
+          Die Position muss deshalb bei einer kleineren Darstellung nicht von Hand angepasst werden.</p>
+
+<br>
+<hr>
+
+		        <p class="webpro-subtitle1"><span class="highlight"><u>5. Die Scrollbar</u></span></p>
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
+<div class="code-block">
+  <div class="code-label">CSS</div>
+  <pre class="code">
+.in-halt {
+   scrollbar-width: thin; 
+   scrollbar-color: #d1cfcc transparent; 
+  } 
+  
+.in-halt::-webkit-scrollbar {
+   width: 8px; 
+  } 
+    
+.in-halt::-webkit-scrollbar-track {
+   background: transparent; 
+  } 
+      
+.in-halt::-webkit-scrollbar-thumb {
+   background-color: #d1cfcc; 
+   border-radius: 4px; 
+  }</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>		        <p>
+		        <em style="letter-spacing: 0.1em;text-decoration: underline;">Anpassungen:<br></em>
+		        <code class="code-con">scrollbar-width: thin;</code> → Legt einen dünnen Scrollbalken für Firefox fest.<br>
+		        <code class="code-con">scrollbar-color:</code> → Legt hier die Farbe des Scrollbalken-Griffs fest.<br>
+		        <code class="code-con">::-webkit-scrollbar</code> → Ermöglicht die Gestaltung der Scrollbar in Chrome, Edge und Safari.<br>
+            <code class="code-con">width:</code> → Legt die Breite des Scrollbalkens fest.<br>
+            <code class="code-con">background-color:</code> → Legt die Farbe des Scrollbalken-Griffs fest.<br>
+            <code class="code-con">background: transparent;</code> → Macht den Hintergrund der Scrollbar-Spur durchsichtig.<br>
+            <code class="code-con">border-radius:</code> → Rundet den Scrollbalken ab.</p>
+
+<br>
+<hr>
+
+		        <p class="webpro-subtitle1"><span class="highlight"><u>6. Credits</u></span></p>
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container">
+<div class="code-block">
+  <div class="code-label">CSS</div>
+  <pre class="code">
+.credits { 
+  margin-top: 10px; 
+  font-size: 7pt; 
+  font-weight: lighter; 
+  color: #d1cfcc; 
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+} 
+
+.credits:hover { 
+  text-decoration: none; 
+  letter-spacing: 1px; 
+  color: #b1a79e; 
+}</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>
+<p>
+		        <em style="letter-spacing: 0.1em;text-decoration: underline;">Anpassungen:<br></em>
+		        <code class="code-con">margin-top:</code> → Legt den Abstand nach oben fest.<br>
+		        <code class="code-con">font-size:</code> → Legt die Schriftgröße fest.<br>
+		        <code class="code-con">font-weight: lighter;</code> → Stellt den Credits-Text dünner als den übrigen Newsbox-Text dar.<br>
+            <code class="code-con">color:</code> → Legt die Schriftfarbe fest.<br>
+            <code class="code-con">text-decoration:</code> → Entfernt die Unterstreichung des Links.<br>
+            <code class="code-con">transition:</code> → Sorgt für einen weichen Übergang beim Hover-Effekt.<br>
+            <code class="code-con">.credits:hover</code> → Ändert das Aussehen des Links, wenn Du mit der Maus darüberfährst.<br>
+            <code class="code-con">letter-spacing:</code> → Vergrößert beim Darüberfahren leicht den Abstand zwischen den Buchstaben.</p>
+
+
+
+		         <!-- CODEBLOCK: Kopierbarer Bereich  -->
+<div class="code-container" style="margin-top: 0px;">
+<div class="code-block">
+  <div class="code-label">HTML</div>
+  <pre class="code">
+  &lt;a
+  href="https://phantasygraphics.blogspot.com"
+  target="_blank"
+  rel="noopener"
+  class="credits"&gt;</pre>
+<button class="copy-btn" onclick="copyBereich(this)">
+   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+     <rect x="9" y="9" width="13" height="13" rx="2"/>
+     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+   </svg>
+</button>
+</div></div>   
+
+		        <p><code class="code-con">target="_blank"</code> → Öffnet den Link in einem neuen Browser-Tab.<br>
+		        <code class="code-con">rel="noopener"</code> → Verhindert, dass die neu geöffnete Seite über das ursprüngliche Fenster zugreifen kann.</p>
+
+
+<br>
+<hr>
+
+		        <p class="webpro-subtitle1"><span class="highlight"><u>7. Automatische Anpassung</u></span></p>
+            <p>Die Newsbox wurde so aufgebaut, dass sie sich automatisch an die verfügbare Breite der Webseite anpasst.</p>
+            
+
+	      <p class="text-block tipp" style="padding-left: 10px;padding-right: 10px;">
+        <b><u>Die Originalgröße beträgt:</u></b><br>
+				  <b>500 × 300 Pixel</b><br>
+          Ist genügend Platz vorhanden, wird die Newsbox in ihrer Originalgröße dargestellt.<br>
+          Ist weniger Platz vorhanden, wird sie automatisch verkleinert.<br>Dabei bleiben <b>Grafik und Inhaltsbereich proportional zueinander</b>.<br>
+          Du musst daher keine Werte für die Größe oder Position des Inhaltsbereichs anpassen.<br><br>
+          <b><u>Beispiel</u></b><br>
+          Bei ausreichend Platz:<br>
+          <b>500 × 300 Pixel</b><br>
+          Bei einer verfügbaren Breite von 400 Pixeln:<br>
+          <b>400 × ca. 240 Pixel</b><br>
+          Bei einer verfügbaren Breite von 300 Pixeln:<br>
+          <b>300 × ca. 180 Pixel</b><br>
+          Die Newsbox passt sich somit automatisch an Desktop, Tablet und kleinere Bildschirme an.<br><br>
+        <b><u>Tipp:</u></b><br>
+        Gerade wenn Du die Newsbox anderen Bastlern zur Verfügung stellst, ist diese Variante praktisch.</p>
+
+</div></div>
+
+<!-- Sep End -->
+<p class="finish">
+        Das war's auch schon von mir. &#128522;<br>
+
+        <span class="finish-meta">
+        Verfasst: 13.Februar 2007 | Aktualisiert: 9.September 2025
+        </span>
+</p>            
+<div class="footer-box">
+    <div class="footer-links">
+        <a href="https://phantasygraphics.blogspot.com/p/web-coding01.html" target="_blank">Back Tutorials</a>
+        <a href="https://phantasygraphics.blogspot.com/" target="_blank">Home</a>
+    </div>
 </div>
+
+</div></div>
 </body>
 </html>
